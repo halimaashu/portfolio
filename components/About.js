@@ -107,10 +107,12 @@ const About = () => {
             </div>
           </div>
           <div ref={textRef} className="flex-1 text-center md:text-left">
-            <h3 className="text-xl font-medium text-brand-teal neon-text">Hi, I'm</h3>
-            <h2 className="text-5xl font-bold mt-2 mb-4">MD. Ashikur Rahman Ashik,</h2>
+            <h2 className="text-4xl md:text-5xl font-bold mb-4">About Me</h2>
             <p className="text-gray-300 text-lg leading-relaxed max-w-2xl">
-              A freelance <span className="text-brand-teal font-semibold">Front-end Web Developer</span> with 3+ years of commercial experience creating successful websites and applications. I focus on building products that are fast, accessible, and high-performing.
+              I am a dedicated student currently pursuing my Diploma in <span className="text-brand-teal font-semibold">Computer Science and Technology (CST)</span> at <span className="text-white font-semibold">Dhaka Polytechnic Institute</span>. 
+            </p>
+            <p className="text-gray-300 text-lg leading-relaxed max-w-2xl mt-4">
+              I am passionate about <span className="text-brand-teal font-semibold">Front-end Web Development</span> and love building high-performance, interactive, and visually stunning web experiences. My goal is to create products that are fast, accessible, and user-friendly.
             </p>
             <div className="mt-8">
               <a 

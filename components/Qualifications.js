@@ -10,7 +10,7 @@ const education = [
   {
     title: 'Diploma in CST',
     subtitle: 'Dhaka polytechnic institute',
-    date: '2024 - Present',
+    date: '',
     side: 'right'
   },
   {
