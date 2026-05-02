@@ -1,36 +1,52 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Antigravity Portfolio | MD. Ashikur Rahman Ashik
 
-## Getting Started
+A high-end, interactive developer portfolio built with **Next.js 16**, **GSAP**, and **Framer Motion**. Featuring a unique "Antigravity" aesthetic with generative liquid trails, smooth scrolling, and custom particle interactions.
 
-First, run the development server:
+## 🚀 Live Demo
+[Check it out live!](https://portfolio-halimaashu.vercel.app/) (Link your deployed Vercel URL here)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## ✨ Key Features
+- **Generative Liquid Trail Cursor**: A custom HTML5 Canvas particle system that reacts to mouse movement.
+- **Antigravity Motion Design**: Fluid floating animations and scroll-triggered reveals using GSAP.
+- **Smooth Scrolling**: Integrated with Lenis for a premium browsing feel.
+- **Interactive Micro-interactions**: Custom particle bursts on clicks for buttons and cards.
+- **Responsive Design**: Fully optimized for mobile, tablet, and desktop with Tailwind CSS.
+- **SEO Optimized**: Built-in metadata and semantic HTML for search engine performance.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🛠️ Tech Stack
+- **Framework**: Next.js (App Router)
+- **Styling**: Tailwind CSS
+- **Animations**: GSAP, Framer Motion
+- **Scrolling**: Lenis
+- **Deployment**: Vercel
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## 📦 Installation & Setup
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/halimaashu/portfolio.git
+   ```
 
-## Learn More
+2. **Install dependencies:**
+   ```bash
+   npm install
+   ```
 
-To learn more about Next.js, take a look at the following resources:
+3. **Run the development server:**
+   ```bash
+   npm run dev
+   ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+4. **Build for production:**
+   ```bash
+   npm run build
+   ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 📬 Contact
+- **Email**: halima520ashu@gmail.com
+- **WhatsApp**: 01975665249
+- **LinkedIn**: [halimaashu](https://www.linkedin.com/feed/)
+- **Facebook**: [Ashik Rahman](https://www.facebook.com/ashik.rahman.322962)
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+Developed with ❤️ by MD. Ashikur Rahman Ashik
