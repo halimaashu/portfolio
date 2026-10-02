@@ -6,8 +6,8 @@ import Projects from '../components/Projects';
 import Contact from '../components/Contact';
 
 export const metadata = {
-  title: 'MD. Ashikur Rahman Ashik | Portfolio',
-  description: 'Freelance Front-end Web Developer with 3+ years of experience.',
+  title: 'Ashikur Rahman | MERN Stack Developer',
+  description: 'MERN Stack Developer building full-stack web apps with React, Next.js, Node.js, and MongoDB.',
 };
 
 export default function Home() {

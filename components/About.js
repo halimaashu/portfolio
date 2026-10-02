@@ -99,7 +99,7 @@ const About = () => {
           <div ref={profileRef} className="relative flex-shrink-0">
             <div className="w-64 h-64 rounded-full border-4 border-brand-teal p-1 overflow-hidden shadow-[0_0_30px_rgba(0,210,180,0.3)]">
               <img 
-                alt="MD. Ashikur Rahman Ashik Profile" 
+                alt="Ashikur Rahman Profile" 
                 className="w-full h-full object-cover rounded-full scale-110" 
                 src="/profile.jpg"
                 style={{ objectPosition: 'center 20%' }}
@@ -109,16 +109,21 @@ const About = () => {
           <div ref={textRef} className="flex-1 text-center md:text-left">
             <h2 className="text-4xl md:text-5xl font-bold mb-4">About Me</h2>
             <p className="text-gray-300 text-lg leading-relaxed max-w-2xl">
-              I am a dedicated student currently pursuing my Diploma in <span className="text-brand-teal font-semibold">Computer Science and Technology (CST)</span> at <span className="text-white font-semibold">Dhaka Polytechnic Institute</span>. 
+              I am <span className="text-white font-semibold">Ashikur Rahman</span>, a dedicated <span className="text-brand-teal font-semibold">MERN Stack Developer</span> currently pursuing my Diploma in <span className="text-brand-teal font-semibold">Computer Science & Technology (CST)</span> at <span className="text-white font-semibold">Dhaka Polytechnic Institute</span>. 
             </p>
             <p className="text-gray-300 text-lg leading-relaxed max-w-2xl mt-4">
-              I am passionate about <span className="text-brand-teal font-semibold">Front-end Web Development</span> and love building high-performance, interactive, and visually stunning web experiences. My goal is to create products that are fast, accessible, and user-friendly.
+              I specialize in building full-stack web applications using <span className="text-brand-teal font-semibold">React, Next.js, Node.js, Express.js, and MongoDB</span>. From designing responsive front-end user interfaces to engineering robust RESTful APIs, database schemas, and authentication systems, I focus on delivering clean, accessible, and high-performance solutions.
             </p>
             <div className="mt-8">
               <a 
-                className="inline-flex items-center px-6 py-3 border-2 border-brand-teal text-brand-teal font-bold rounded-lg hover:bg-brand-teal hover:text-white transition-all duration-300" 
-                href="#"
+                className="inline-flex items-center px-6 py-3 border-2 border-brand-teal text-brand-teal font-bold rounded-lg hover:bg-brand-teal hover:text-brand-darker transition-all duration-300 shadow-[0_0_15px_rgba(0,210,180,0.2)]" 
+                href="https://drive.google.com/file/d/1IZvW7-Ujbg3V-GMN-SSme2JgMyRP0hFc/view?usp=drive_link"
+                target="_blank"
+                rel="noopener noreferrer"
               >
+                <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path>
+                </svg>
                 Download my resume (PDF)
               </a>
             </div>

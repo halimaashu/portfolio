@@ -9,13 +9,13 @@ gsap.registerPlugin(ScrollTrigger);
 const education = [
   {
     title: 'Diploma in CST',
-    subtitle: 'Dhaka polytechnic institute',
-    date: '',
+    subtitle: 'Dhaka Polytechnic Institute',
+    date: '2024 - Present (Expected 2028)',
     side: 'right'
   },
   {
     title: 'SSC',
-    subtitle: 'Khamar miniram high school',
+    subtitle: 'Khamar Miniram High School',
     date: 'Completed 2024',
     side: 'left'
   }

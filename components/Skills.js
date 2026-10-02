@@ -8,19 +8,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 const skills = [
   { 
-    name: 'HTML5', 
-    icon: <svg viewBox="0 0 24 24" fill="#E34F26"><path d="M1.5 0h21l-1.9 21.4L12 24l-8.6-2.6L1.5 0zM10.5 16.1l-3.9-.1L6.3 12h3.9L10 9H6l-.2-3h12.4l-.2 3h-6l.2 3h6l-.3 5.4L12 18.9l-5.6-1.5-.1-1.3h3.2v.1z"/></svg> 
-  },
-  { 
-    name: 'CSS3', 
-    icon: <svg viewBox="0 0 24 24" fill="#1572B6"><path d="M1.5 0h21l-1.9 21.4L12 24l-8.6-2.6L1.5 0zM18 6H6.2l.2 3H17l-.2 3.4L12 14l-4.8-1.6-.1-1.4H4.3l.2 3.8L12 18l7.5-3.3.5-8.7z"/></svg> 
-  },
-  { 
-    name: 'JavaScript', 
-    icon: <svg viewBox="0 0 24 24" fill="#F7DF1E"><path d="M0 0h24v24H0V0zm22.034 18.254c.028-.435-.112-.76-.411-.975-.3-.21-.73-.34-1.29-.39l-.65-.05c-.32-.03-.54-.08-.66-.15-.12-.07-.18-.17-.18-.3 0-.12.04-.21.14-.28.1-.07.25-.1.45-.1.21 0 .39.05.54.14.15.09.24.23.28.43h1.83c-.04-.56-.22-1.02-.55-1.39-.33-.37-.86-.55-1.58-.55-.71 0-1.28.17-1.7.53-.42.36-.63.81-.63 1.34 0 .43.14.77.42 1.02.28.25.75.43 1.41.53l.63.09c.33.04.56.1.7.18.14.08.21.19.21.32 0 .14-.07.24-.2.32-.13.08-.34.12-.62.12-.35 0-.61-.09-.78-.28-.17-.19-.26-.45-.26-.78h-1.88c0 .59.18 1.09.53 1.5.35.41.91.62 1.69.62.72 0 1.28-.17 1.69-.51.41-.34.62-.8.62-1.38v-.03zm-7.643-1.03c0-.57-.22-1.04-.66-1.41-.44-.37-1.05-.56-1.82-.56-.78 0-1.37.17-1.78.51-.41.34-.63.81-.66 1.42h1.83c.03-.26.11-.47.24-.62.13-.15.34-.23.64-.23.27 0 .47.07.6.21.13.14.2.32.2.55v4.21c0 .24-.07.43-.2.57-.13.14-.33.21-.6.21-.29 0-.5-.07-.63-.21-.13-.14-.2-.33-.2-.57V18h-1.83v2.85c0 .67.2 1.2.62 1.58.42.38 1 .57 1.74.57 1.5 0 2.25-.72 2.25-2.15v-4.63z"/></svg> 
-  },
-  { 
-    name: 'React', 
+    name: 'React.js', 
     icon: <svg viewBox="-11.5 -10.23174 23 20.46348" fill="#61DAFB"><circle cx="0" cy="0" r="2.05" fill="#61DAFB"/><g stroke="#61DAFB" strokeWidth="1" fill="none"><ellipse rx="11" ry="4.2"/><ellipse rx="11" ry="4.2" transform="rotate(60)"/><ellipse rx="11" ry="4.2" transform="rotate(120)"/></g></svg> 
   },
   { 
@@ -28,8 +16,36 @@ const skills = [
     icon: <svg viewBox="0 0 128 128" fill="#fff"><path d="M64 0a64 64 0 1064 64A64 64 0 0064 0zM51 43.1h6v41.8h-6V43.1zm44.2 34L85.5 63.8V85h-6V43h5.9l13.1 19V43h6v41.9h-4.3z"/></svg> 
   },
   { 
+    name: 'Node.js', 
+    icon: <svg viewBox="0 0 24 24" fill="#339933"><path d="M12 2L2 7.5v9L12 22l10-5.5v-9L12 2zm-1 15.5l-6-3.3v-6.4l6 3.3v6.4zm2 0v-6.4l6-3.3v6.4l-6 3.3z"/></svg> 
+  },
+  { 
+    name: 'Express.js', 
+    icon: <svg viewBox="0 0 24 24" fill="#fff"><path d="M12 0C5.37 0 0 5.37 0 12s5.37 12 12 12 12-5.37 12-12S18.63 0 12 0zm5.6 15.9h-1.9l-2.4-3.8-2.4 3.8H9l3.4-5.2L9.2 5.5h1.9l2.2 3.5 2.2-3.5h1.9l-3.2 5.2 3.4 5.2z"/></svg> 
+  },
+  { 
+    name: 'MongoDB', 
+    icon: <svg viewBox="0 0 24 24" fill="#47A248"><path d="M12 0s-6.2 6.8-6.2 12.8c0 3.8 2.6 7 6.2 7.9 3.6-.9 6.2-4.1 6.2-7.9C18.2 6.8 12 0 12 0zm.8 19.8v-7.2c.4-.3.7-.8.7-1.4 0-.9-.7-1.7-1.6-1.7s-1.6.8-1.6 1.7c0 .6.3 1.1.7 1.4v7.2c-2.7-.8-4.6-3.3-4.6-6.3 0-4.8 4.3-10 4.8-10.6.5.6 4.8 5.8 4.8 10.6 0 3-1.9 5.5-4.6 6.3z"/></svg> 
+  },
+  { 
+    name: 'TypeScript', 
+    icon: <svg viewBox="0 0 24 24" fill="#3178C6"><path d="M0 0h24v24H0V0zm22.034 18.254c.028-.435-.112-.76-.411-.975-.3-.21-.73-.34-1.29-.39l-.65-.05c-.32-.03-.54-.08-.66-.15-.12-.07-.18-.17-.18-.3 0-.12.04-.21.14-.28.1-.07.25-.1.45-.1.21 0 .39.05.54.14.15.09.24.23.28.43h1.83c-.04-.56-.22-1.02-.55-1.39-.33-.37-.86-.55-1.58-.55-.71 0-1.28.17-1.7.53-.42.36-.63.81-.63 1.34 0 .43.14.77.42 1.02.28.25.75.43 1.41.53l.63.09c.33.04.56.1.7.18.14.08.21.19.21.32 0 .14-.07.24-.2.32-.13.08-.34.12-.62.12-.35 0-.61-.09-.78-.28-.17-.19-.26-.45-.26-.78h-1.88c0 .59.18 1.09.53 1.5.35.41.91.62 1.69.62.72 0 1.28-.17 1.69-.51.41-.34.62-.8.62-1.38v-.03zm-7.643-1.03c0-.57-.22-1.04-.66-1.41-.44-.37-1.05-.56-1.82-.56-.78 0-1.37.17-1.78.51-.41.34-.63.81-.66 1.42h1.83c.03-.26.11-.47.24-.62.13-.15.34-.23.64-.23.27 0 .47.07.6.21.13.14.2.32.2.55v4.21c0 .24-.07.43-.2.57-.13.14-.33.21-.6.21-.29 0-.5-.07-.63-.21-.13-.14-.2-.33-.2-.57V18h-1.83v2.85c0 .67.2 1.2.62 1.58.42.38 1 .57 1.74.57 1.5 0 2.25-.72 2.25-2.15v-4.63z"/></svg> 
+  },
+  { 
+    name: 'JavaScript (ES6+)', 
+    icon: <svg viewBox="0 0 24 24" fill="#F7DF1E"><path d="M0 0h24v24H0V0zm22.034 18.254c.028-.435-.112-.76-.411-.975-.3-.21-.73-.34-1.29-.39l-.65-.05c-.32-.03-.54-.08-.66-.15-.12-.07-.18-.17-.18-.3 0-.12.04-.21.14-.28.1-.07.25-.1.45-.1.21 0 .39.05.54.14.15.09.24.23.28.43h1.83c-.04-.56-.22-1.02-.55-1.39-.33-.37-.86-.55-1.58-.55-.71 0-1.28.17-1.7.53-.42.36-.63.81-.63 1.34 0 .43.14.77.42 1.02.28.25.75.43 1.41.53l.63.09c.33.04.56.1.7.18.14.08.21.19.21.32 0 .14-.07.24-.2.32-.13.08-.34.12-.62.12-.35 0-.61-.09-.78-.28-.17-.19-.26-.45-.26-.78h-1.88c0 .59.18 1.09.53 1.5.35.41.91.62 1.69.62.72 0 1.28-.17 1.69-.51.41-.34.62-.8.62-1.38v-.03zm-7.643-1.03c0-.57-.22-1.04-.66-1.41-.44-.37-1.05-.56-1.82-.56-.78 0-1.37.17-1.78.51-.41.34-.63.81-.66 1.42h1.83c.03-.26.11-.47.24-.62.13-.15.34-.23.64-.23.27 0 .47.07.6.21.13.14.2.32.2.55v4.21c0 .24-.07.43-.2.57-.13.14-.33.21-.6.21-.29 0-.5-.07-.63-.21-.13-.14-.2-.33-.2-.57V18h-1.83v2.85c0 .67.2 1.2.62 1.58.42.38 1 .57 1.74.57 1.5 0 2.25-.72 2.25-2.15v-4.63z"/></svg> 
+  },
+  { 
     name: 'Tailwind CSS', 
     icon: <svg viewBox="0 0 24 24" fill="#06B6D4"><path d="M12.001 4.8c-3.2 0-5.2 1.6-6 4.8 1.2-1.6 2.6-2.2 4.2-1.8.913.228 1.565.89 2.288 1.624C13.666 10.618 15.027 12 18.001 12c3.2 0 5.2-1.6 6-4.8-1.2 1.6-2.6 2.2-4.2 1.8-.913-.228-1.565-.89-2.288-1.624C16.337 6.182 14.976 4.8 12.001 4.8zm-6 7.2c-3.2 0-5.2 1.6-6 4.8 1.2-1.6 2.6-2.2 4.2-1.8.913.228 1.565.89 2.288 1.624C7.666 17.818 9.027 19 12.001 19c3.2 0 5.2-1.6 6-4.8-1.2 1.6-2.6 2.2-4.2 1.8-.913-.228-1.565-.89-2.288-1.624C10.337 13.382 8.976 12 6.001 12z"/></svg> 
+  },
+  { 
+    name: 'JWT & Auth', 
+    icon: <svg viewBox="0 0 24 24" fill="#D63AF9"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-5.45 9-12V5l-9-4zm-1 6h2v2h-2V7zm0 4h2v6h-2v-6z"/></svg> 
+  },
+  { 
+    name: 'RESTful APIs', 
+    icon: <svg viewBox="0 0 24 24" fill="#00d2b4"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14.5v-9l6 4.5-6 4.5z"/></svg> 
   },
   { 
     name: 'Git', 
@@ -53,7 +69,7 @@ const Skills = () => {
         y: 0, 
         scale: 1,
         duration: 0.6, 
-        stagger: 0.1,
+        stagger: 0.08,
         ease: "back.out(1.7)",
         scrollTrigger: {
           trigger: sectionRef.current,
@@ -66,21 +82,21 @@ const Skills = () => {
   return (
     <section className="py-24 px-8 max-w-7xl mx-auto" id="skills" ref={sectionRef}>
       <div className="flex flex-col items-center mb-16">
-        <h3 className="text-brand-teal font-medium mb-2 tracking-widest uppercase">Expertise</h3>
-        <h2 className="text-4xl md:text-5xl font-bold">Technologies</h2>
+        <h3 className="text-brand-teal font-medium mb-2 tracking-widest uppercase">MERN Stack Tech Stack</h3>
+        <h2 className="text-4xl md:text-5xl font-bold">Skills & Tools</h2>
       </div>
 
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
         {skills.map((skill, index) => (
           <div 
             key={skill.name}
             ref={el => cardsRef.current[index] = el}
-            className="group relative bg-brand-dark/40 border border-gray-800 rounded-2xl p-8 flex flex-col items-center justify-center transition-all duration-300 hover:border-brand-teal/50 hover:bg-brand-dark/60"
+            className="group relative bg-brand-dark/40 border border-gray-800 rounded-2xl p-6 flex flex-col items-center justify-center transition-all duration-300 hover:border-brand-teal/50 hover:bg-brand-dark/60"
           >
-            <div className="w-16 h-16 mb-6 transform transition-transform duration-500 group-hover:scale-110 group-hover:rotate-6">
+            <div className="w-14 h-14 mb-4 transform transition-transform duration-500 group-hover:scale-110 group-hover:rotate-6">
               {skill.icon}
             </div>
-            <h4 className="text-lg font-semibold text-gray-300 group-hover:text-white transition-colors">
+            <h4 className="text-base font-semibold text-gray-300 group-hover:text-white transition-colors text-center">
               {skill.name}
             </h4>
             

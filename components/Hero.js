@@ -4,7 +4,7 @@ import React, { useState, useEffect } from 'react';
 import Navbar from './Navbar';
 import { motion, AnimatePresence } from 'framer-motion';
 
-const titles = ["Web Developer", "Problem Solver", "UI/UX Enthusiast"];
+const titles = ["MERN Stack Developer", "Full Stack Developer", "Problem Solver"];
 
 const Hero = () => {
   const [index, setIndex] = useState(0);
@@ -45,11 +45,11 @@ const Hero = () => {
             </motion.span>
           </motion.div>
 
-          <h1 className="text-5xl md:text-7xl font-extrabold text-white mb-4 tracking-tight">
-            I'm <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-teal to-purple-400">Ashik</span>
+          <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-white mb-4 tracking-tight">
+            I'm <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-teal to-purple-400">Ashikur Rahman</span>
           </h1>
 
-          <div className="h-16 mb-8">
+          <div className="h-16 mb-6">
             <AnimatePresence mode="wait">
               <motion.p 
                 key={titles[index]}
@@ -57,7 +57,7 @@ const Hero = () => {
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, y: -20 }}
                 transition={{ duration: 0.5 }}
-                className="text-gray-300 text-3xl md:text-4xl font-bold"
+                className="text-gray-300 text-2xl sm:text-3xl md:text-4xl font-bold"
               >
                 {titles[index]}
               </motion.p>
@@ -65,7 +65,7 @@ const Hero = () => {
           </div>
 
           <p className="text-gray-400 text-lg max-w-lg mb-10 leading-relaxed">
-            A passionate Front-end Web Developer from Bangladesh. I love creating high-performance, interactive, and visually stunning web experiences that solve real-world problems.
+            A passionate MERN Stack Developer building scalable, full-stack web applications with React, Next.js, Node.js, Express, and MongoDB.
           </p>
 
           <div className="flex flex-wrap gap-4">
@@ -73,18 +73,26 @@ const Hero = () => {
               href="#contact" 
               className="px-8 py-4 bg-brand-teal text-brand-darker font-bold rounded-xl hover:shadow-[0_0_20px_rgba(0,210,180,0.5)] transition-all transform hover:-translate-y-1"
             >
-              Hire Me
+              Contact Me
+            </a>
+            <a 
+              href="https://drive.google.com/file/d/1IZvW7-Ujbg3V-GMN-SSme2JgMyRP0hFc/view?usp=drive_link" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="px-8 py-4 border border-brand-teal text-brand-teal font-bold rounded-xl hover:bg-brand-teal hover:text-brand-darker transition-all transform hover:-translate-y-1"
+            >
+              Download CV
             </a>
             <a 
               href="#projects" 
               className="px-8 py-4 border border-white/20 text-white font-bold rounded-xl hover:bg-white/5 transition-all transform hover:-translate-y-1"
             >
-              View My Work
+              View Projects
             </a>
           </div>
         </motion.div>
 
-        {/* Right Content (Illustration) */}
+        {/* Right Content (Profile Frame) */}
         <motion.div 
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
@@ -96,14 +104,15 @@ const Hero = () => {
           <div className="absolute top-0 right-0 w-64 h-64 bg-purple-500/10 rounded-full blur-[100px] animate-float"></div>
 
           <motion.div
-            animate={{ y: [-20, 20, -20] }}
+            animate={{ y: [-15, 15, -15] }}
             transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
-            className="relative z-10 w-full max-w-md"
+            className="relative z-10 w-72 h-72 sm:w-80 sm:h-80 rounded-full border-4 border-brand-teal p-2 overflow-hidden shadow-[0_0_40px_rgba(0,210,180,0.4)]"
           >
             <img 
-              alt="Developer Illustration" 
-              className="w-full h-auto drop-shadow-[0_0_35px_rgba(0,210,180,0.3)]" 
-              src="https://lh3.googleusercontent.com/aida-public/AB6AXuC98bpt-eAxlsP15eAx4x8JkVGPpZl3nU57EsglwMhK-z9FDsq6PxksLqkBPZNp7beDP3YW_lrw0uHbDXfFdiMSk-7LK16eOTnvaD3BlFMG25iO52nn4F_5V190A7ylwYPolsoNMKJtdE86X-f6pVQ1UCCn8hg9dRtlSd1tbDgO4kOl_VqBVUa0hur8mC727_AJ319ZwrsEAe3Sh0v6qgtEzVwXjE1orSPIW8ZIhp88VJRAJJOXYU0OSG5ss21nWThS3EPMvvwOYGw"
+              alt="Ashikur Rahman Profile" 
+              className="w-full h-full object-cover object-top rounded-full" 
+              src="/profile.jpg"
+              style={{ objectPosition: 'center 20%' }}
             />
           </motion.div>
         </motion.div>
