@@ -9,7 +9,7 @@ export const projects = [
       "Community Discussion Forum & JWT Authentication"
     ],
     techs: ["React", "Node.js", "Express", "MongoDB", "Tailwind CSS", "Vercel"],
-    image: "/project_youngman.png",
+    image: "/youngMan.png",
     github: "https://github.com/halimaashu/young-man",
     demo: "https://young-man.vercel.app/"
   },
@@ -23,7 +23,7 @@ export const projects = [
       "JWT Secure Authentication & Resume Management"
     ],
     techs: ["React", "Node.js", "Express", "MongoDB", "JWT Auth", "Vercel"],
-    image: "/project_aihub.png",
+    image: "/hireloop.png",
     github: "https://github.com/halimaashu/hire-loop",
     demo: "https://hire-loop.vercel.app/"
   },
@@ -37,7 +37,7 @@ export const projects = [
       "Advanced Search, Category Filters & Product Reviews"
     ],
     techs: ["React", "Node.js", "Express", "MongoDB", "Stripe", "Vercel"],
-    image: "/project_digitools.png",
+    image: "/gameBoy.png",
     github: "https://github.com/halimaashu/game-boy",
     demo: "https://game-boy.vercel.app/"
   },
@@ -82,5 +82,18 @@ export const projects = [
     image: "/project_teahouse.png",
     github: "https://github.com/halimaashu/tea-house",
     demo: "https://halimaashu.github.io/tea-house/"
+  },{
+    id: "podcast",
+    title: "The Podcast Website",
+    problem: "Tis is a simple podcast website.",
+    features: [
+      "Clean, responsive product exploration layout",
+      "Customer ratings, pricing cards, and tea features",
+      "Optimized speed and lightweight HTML/Tailwind build"
+    ],
+    techs: ["HTML5", "Tailwind CSS", "JavaScript", "GitHub Pages"],
+    image: "/podcast.png",
+    github: "https://github.com/halimaashu/Podcast-Website",
+    demo: "https://halimaashu.github.io/Podcast-Website/"
   }
 ];
