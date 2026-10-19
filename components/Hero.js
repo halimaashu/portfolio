@@ -111,7 +111,7 @@ const Hero = () => {
             <img 
               alt="Ashikur Rahman Profile" 
               className="w-full h-full object-cover object-top rounded-full" 
-              src="/profile.jpg"
+              src="/profile1.jpg"
               style={{ objectPosition: 'center 20%' }}
             />
           </motion.div>

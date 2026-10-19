@@ -2,6 +2,7 @@ import "./globals.css";
 import SmoothScroll from "../components/SmoothScroll";
 import CustomCursor from "../components/CustomCursor";
 import ParticleBurst from "../components/ParticleBurst";
+import AIAgent from "../components/AIAgent";
 
 export const metadata = {
   title: "Ashikur Rahman | MERN Stack Developer",
@@ -25,6 +26,7 @@ export default function RootLayout({ children }) {
         <SmoothScroll>
           {children}
         </SmoothScroll>
+        <AIAgent />
       </body>
     </html>
   );

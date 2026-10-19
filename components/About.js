@@ -95,8 +95,8 @@ const About = () => {
   return (
     <section ref={sectionRef} className="py-20 bg-brand-dark overflow-hidden" id="about">
       <div className="max-w-6xl mx-auto px-6">
-        <div className="flex flex-col md:flex-row items-center gap-12">
-          <div ref={profileRef} className="relative flex-shrink-0">
+        <div className="flex flex-col-reverse md:flex-row items-center gap-12">
+          <div ref={profileRef} className="relative  flex-shrink-0">
             <div className="w-64 h-64 rounded-full border-4 border-brand-teal p-1 overflow-hidden shadow-[0_0_30px_rgba(0,210,180,0.3)]">
               <img 
                 alt="Ashikur Rahman Profile" 

@@ -25,7 +25,7 @@ export const projects = [
     techs: ["React", "Node.js", "Express", "MongoDB", "JWT Auth", "Vercel"],
     image: "/hireloop.png",
     github: "https://github.com/halimaashu/hire-loop",
-    demo: "https://hire-loop.vercel.app/"
+    demo: "https://hire-loop-beta.vercel.app/"
   },
   {
     id: "gameboy",
@@ -51,7 +51,7 @@ export const projects = [
       "Responsive MERN full-stack architecture"
     ],
     techs: ["React", "Node.js", "Express", "MongoDB", "Vercel"],
-    image: "/project_friendvibe.png",
+    image: "/project_friendvibe.jpg",
     github: "https://github.com/halimaashu/Friend-vibes.JHOn",
     demo: "https://friend-vibe.vercel.app/"
   },
