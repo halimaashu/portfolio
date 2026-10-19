@@ -39,7 +39,7 @@ export const projects = [
     techs: ["React", "Node.js", "Express", "MongoDB", "Stripe", "Vercel"],
     image: "/gameBoy.png",
     github: "https://github.com/halimaashu/game-boy",
-    demo: "https://game-boy.vercel.app/"
+    demo: "https://game-boy-red.vercel.app/"
   },
   {
     id: "friendvibe",
