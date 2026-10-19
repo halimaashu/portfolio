@@ -45,8 +45,8 @@ const Hero = () => {
             </motion.span>
           </motion.div>
 
-          <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-white mb-4 tracking-tight">
-            I'm <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-teal to-purple-400">Ashikur Rahman</span>
+          <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-white mb-4 tracking-tight font-display">
+            I'm <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#731cb2] via-[#a17de0] to-[#5a2aac]">Ashikur Rahman</span>
           </h1>
 
           <div className="h-16 mb-6">
@@ -71,7 +71,7 @@ const Hero = () => {
           <div className="flex flex-wrap gap-4">
             <a 
               href="#contact" 
-              className="px-8 py-4 bg-brand-teal text-brand-darker font-bold rounded-xl hover:shadow-[0_0_20px_rgba(0,210,180,0.5)] transition-all transform hover:-translate-y-1"
+              className="px-8 py-4 bg-gradient-to-r from-[#731cb2] to-[#5a2aac] text-[#F8FAFC] font-bold rounded-xl hover:shadow-[0_0_25px_rgba(115,28,178,0.6)] transition-all transform hover:-translate-y-1 shadow-[0_0_15px_rgba(115,28,178,0.35)]"
             >
               Contact Me
             </a>
@@ -79,7 +79,7 @@ const Hero = () => {
               href="https://drive.google.com/file/d/1IZvW7-Ujbg3V-GMN-SSme2JgMyRP0hFc/view?usp=drive_link" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="px-8 py-4 border border-brand-teal text-brand-teal font-bold rounded-xl hover:bg-brand-teal hover:text-brand-darker transition-all transform hover:-translate-y-1"
+              className="px-8 py-4 border border-[#731cb2] text-[#a17de0] hover:text-[#F8FAFC] font-bold rounded-xl hover:bg-[#731cb2]/20 hover:border-[#a17de0] transition-all transform hover:-translate-y-1"
             >
               Download CV
             </a>
@@ -100,13 +100,13 @@ const Hero = () => {
           className="relative flex items-center justify-center"
         >
           {/* Decorative Glows */}
-          <div className="absolute inset-0 bg-brand-teal/10 rounded-full blur-[120px] animate-pulse"></div>
-          <div className="absolute top-0 right-0 w-64 h-64 bg-purple-500/10 rounded-full blur-[100px] animate-float"></div>
+          <div className="absolute inset-0 bg-[#731cb2]/20 rounded-full blur-[120px] animate-pulse"></div>
+          <div className="absolute top-0 right-0 w-64 h-64 bg-[#5a2aac]/25 rounded-full blur-[100px] animate-float"></div>
 
           <motion.div
             animate={{ y: [-15, 15, -15] }}
             transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
-            className="relative z-10 w-72 h-72 sm:w-80 sm:h-80 rounded-full border-4 border-brand-teal p-2 overflow-hidden shadow-[0_0_40px_rgba(0,210,180,0.4)]"
+            className="relative z-10 w-72 h-72 sm:w-80 sm:h-80 rounded-full border-4 border-[#731cb2] p-2 overflow-hidden shadow-[0_0_40px_rgba(115,28,178,0.5)]"
           >
             <img 
               alt="Ashikur Rahman Profile" 

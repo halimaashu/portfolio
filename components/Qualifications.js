@@ -74,12 +74,12 @@ const Qualifications = () => {
         </div>
 
         <div className="flex justify-center items-center mb-12 space-x-8">
-          <div className="flex items-center space-x-2 text-brand-teal">
+          <div className="flex items-center space-x-2 text-[#a17de0]">
             <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path d="M12 14l9-5-9-5-9 5 9 5z" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"></path>
               <path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"></path>
             </svg>
-            <span className="font-semibold text-lg">Education</span>
+            <span className="font-semibold text-lg font-display">Education</span>
           </div>
         </div>
 
@@ -87,7 +87,7 @@ const Qualifications = () => {
           {/* Vertical Line */}
           <div 
             ref={lineRef}
-            className="absolute left-1/2 transform -translate-x-1/2 w-[2px] bg-brand-teal/30 h-full origin-top"
+            className="absolute left-1/2 transform -translate-x-1/2 w-[2px] bg-gradient-to-b from-[#731cb2] via-[#5a2aac] to-transparent h-full origin-top"
           ></div>
 
           <div className="space-y-12">
@@ -98,17 +98,17 @@ const Qualifications = () => {
                 className={`flex items-center w-full ${index % 2 === 0 ? 'justify-start' : 'justify-end'}`}
               >
                 <div className={`w-1/2 ${index % 2 === 0 ? 'pr-8 text-right' : 'pl-8 text-left'} relative`}>
-                  <h3 className="text-xl font-bold text-white mb-1">{edu.title}</h3>
+                  <h3 className="text-xl font-bold text-white mb-1 font-display">{edu.title}</h3>
                   <p className="text-gray-400 text-sm mb-2">{edu.subtitle}</p>
-                  <div className="flex items-center space-x-2 text-gray-500 text-xs justify-center md:justify-start">
-                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <div className="flex items-center space-x-2 text-gray-500 text-xs justify-center md:justify-start font-mono">
+                    <svg className="w-4 h-4 text-[#a17de0]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"></path>
                     </svg>
                     <span>{edu.date}</span>
                   </div>
 
                   {/* Node Dot */}
-                  <div className={`absolute top-1/2 ${index % 2 === 0 ? '-right-[9px]' : '-left-[9px]'} -translate-y-1/2 w-4 h-4 bg-brand-darker border-2 border-brand-teal rounded-full z-10 shadow-[0_0_10px_rgba(0,210,180,0.5)]`}></div>
+                  <div className={`absolute top-1/2 ${index % 2 === 0 ? '-right-[9px]' : '-left-[9px]'} -translate-y-1/2 w-4 h-4 bg-brand-darker border-2 border-[#731cb2] rounded-full z-10 shadow-[0_0_15px_rgba(115,28,178,0.7)]`}></div>
                 </div>
               </div>
             ))}

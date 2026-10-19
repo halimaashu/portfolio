@@ -78,7 +78,7 @@ const ProjectRow = ({ project, index }) => {
           <div className="flex flex-wrap sm:flex-nowrap gap-4">
             {project.github && (
               <a 
-                className="flex-1 text-center py-3 px-4 bg-brand-teal/10 text-brand-teal rounded-xl font-bold hover:bg-brand-teal hover:text-brand-darker transition-all duration-300 text-sm border border-brand-teal/30" 
+                className="flex-1 text-center py-3 px-4 bg-brand-teal/10 text-brand-teal rounded-xl font-bold hover:bg-brand-teal hover:text-white transition-all duration-300 text-sm border border-brand-teal/30" 
                 href={project.github}
                 target="_blank"
                 rel="noopener noreferrer"
@@ -88,7 +88,7 @@ const ProjectRow = ({ project, index }) => {
             )}
             {project.demo && (
               <a 
-                className="flex-1 text-center py-3 px-4 bg-brand-teal text-brand-darker rounded-xl font-bold hover:bg-brand-teal/80 transition-all duration-300 text-sm shadow-[0_0_20px_rgba(0,210,180,0.3)]" 
+                className="flex-1 text-center py-3 px-4 bg-gradient-to-r from-[#731cb2] to-[#5a2aac] text-white rounded-xl font-bold hover:opacity-90 transition-all duration-300 text-sm shadow-[0_0_20px_rgba(115,28,178,0.4)]" 
                 href={project.demo}
                 target="_blank"
                 rel="noopener noreferrer"

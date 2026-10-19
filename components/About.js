@@ -96,8 +96,8 @@ const About = () => {
     <section ref={sectionRef} className="py-20 bg-brand-dark overflow-hidden" id="about">
       <div className="max-w-6xl mx-auto px-6">
         <div className="flex flex-col-reverse md:flex-row items-center gap-12">
-          <div ref={profileRef} className="relative  flex-shrink-0">
-            <div className="w-64 h-64 rounded-full border-4 border-brand-teal p-1 overflow-hidden shadow-[0_0_30px_rgba(0,210,180,0.3)]">
+          <div ref={profileRef} className="relative flex-shrink-0">
+            <div className="w-64 h-64 rounded-full border-4 border-[#731cb2] p-1 overflow-hidden shadow-[0_0_35px_rgba(115,28,178,0.45)]">
               <img 
                 alt="Ashikur Rahman Profile" 
                 className="w-full h-full object-cover rounded-full scale-110" 
@@ -107,16 +107,16 @@ const About = () => {
             </div>
           </div>
           <div ref={textRef} className="flex-1 text-center md:text-left">
-            <h2 className="text-4xl md:text-5xl font-bold mb-4">About Me</h2>
+            <h2 className="text-4xl md:text-5xl font-bold mb-4 font-display">About Me</h2>
             <p className="text-gray-300 text-lg leading-relaxed max-w-2xl">
-              I am <span className="text-white font-semibold">Ashikur Rahman</span>, a dedicated <span className="text-brand-teal font-semibold">MERN Stack Developer</span> currently pursuing my Diploma in <span className="text-brand-teal font-semibold">Computer Science & Technology (CST)</span> at <span className="text-white font-semibold">Dhaka Polytechnic Institute</span>. 
+              I am <span className="text-white font-semibold">Ashikur Rahman</span>, a dedicated <span className="text-[#a17de0] font-semibold">MERN Stack Developer</span> currently pursuing my Diploma in <span className="text-[#a17de0] font-semibold">Computer Science & Technology (CST)</span> at <span className="text-white font-semibold">Dhaka Polytechnic Institute</span>. 
             </p>
             <p className="text-gray-300 text-lg leading-relaxed max-w-2xl mt-4">
-              I specialize in building full-stack web applications using <span className="text-brand-teal font-semibold">React, Next.js, Node.js, Express.js, and MongoDB</span>. From designing responsive front-end user interfaces to engineering robust RESTful APIs, database schemas, and authentication systems, I focus on delivering clean, accessible, and high-performance solutions.
+              I specialize in building full-stack web applications using <span className="text-[#a17de0] font-semibold">React, Next.js, Node.js, Express.js, and MongoDB</span>. From designing responsive front-end user interfaces to engineering robust RESTful APIs, database schemas, and authentication systems, I focus on delivering clean, accessible, and high-performance solutions.
             </p>
             <div className="mt-8">
               <a 
-                className="inline-flex items-center px-6 py-3 border-2 border-brand-teal text-brand-teal font-bold rounded-lg hover:bg-brand-teal hover:text-brand-darker transition-all duration-300 shadow-[0_0_15px_rgba(0,210,180,0.2)]" 
+                className="inline-flex items-center px-6 py-3 border-2 border-[#731cb2] text-[#a17de0] font-bold rounded-lg hover:bg-[#731cb2] hover:text-[#F8FAFC] transition-all duration-300 shadow-[0_0_20px_rgba(115,28,178,0.3)]" 
                 href="https://drive.google.com/file/d/1IZvW7-Ujbg3V-GMN-SSme2JgMyRP0hFc/view?usp=drive_link"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -133,7 +133,7 @@ const About = () => {
         <div ref={principlesRef} className="grid grid-cols-2 md:grid-cols-4 gap-8 mt-24">
           {principles.map((principle, index) => (
             <div key={index} className="principle-card flex flex-col items-center text-center">
-              <div className="w-16 h-16 bg-brand-teal/20 rounded-xl flex items-center justify-center mb-4 border border-brand-teal/30 group hover:border-brand-teal transition-colors">
+              <div className="w-16 h-16 bg-[#731cb2]/15 rounded-xl flex items-center justify-center mb-4 border border-[#5a2aac]/50 group hover:border-[#731cb2] hover:shadow-[0_0_20px_rgba(115,28,178,0.3)] transition-all">
                 {principle.icon}
               </div>
               <h4 className="font-bold text-lg mb-2">{principle.title}</h4>

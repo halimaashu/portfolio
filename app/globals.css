@@ -1,16 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap');
 @import "tailwindcss";
 
-:root {
+:root, [data-theme="dark"], .dark {
   --background: #0a0f1a;
   --foreground: #ffffff;
-  --brand-teal: #00d2b4;
-  --brand-purple: #7c3aed;
+  
+  /* Primary Brand Palette: Electric Violet [#731cb2] & Royal Indigo [#5a2aac] */
+  --brand-primary: #731cb2;
+  --brand-secondary: #5a2aac;
+  --brand-accent: #a17de0;
+  --brand-teal: #731cb2; /* Universal primary accent mapping */
+  --brand-purple: #5a2aac; /* Secondary indigo mapping */
   --brand-dark: #111827;
   --brand-darker: #0a0f1a;
   --brand-card: #1f2937;
+  
+  /* Agentic AI Multi-layered Palette */
+  --agent-midnight: #280d69;
+  --agent-plum: #45106c;
+  --agent-indigo-border: #5a2aac;
+  --agent-violet: #731cb2;
+  --agent-lavender: #a17de0;
+  --agent-ice-white: #F8FAFC;
+}
+
+[data-theme="light"], .light {
+  --background: #f8fafc;
+  --foreground: #0f172a;
+  
+  /* Light Theme Brand Mapping */
+  --brand-primary: #731cb2;
+  --brand-secondary: #5a2aac;
+  --brand-accent: #a17de0;
+  --brand-teal: #731cb2;
+  --brand-purple: #5a2aac;
+  --brand-dark: #f1f5f9;
+  --brand-darker: #ffffff;
+  --brand-card: #ffffff;
+
+  /* Agentic AI Light adaptations */
+  --agent-midnight: #280d69;
+  --agent-plum: #45106c;
+  --agent-indigo-border: #5a2aac;
+  --agent-violet: #731cb2;
+  --agent-lavender: #a17de0;
+  --agent-ice-white: #F8FAFC;
 }
 
 @theme inline {
+  --color-brand-primary: var(--brand-primary);
+  --color-brand-secondary: var(--brand-secondary);
+  --color-brand-accent: var(--brand-accent);
   --color-brand-teal: var(--brand-teal);
   --color-brand-purple: var(--brand-purple);
   --color-brand-dark: var(--brand-dark);
@@ -32,15 +72,48 @@
 }
 
 .neon-text {
-  text-shadow: 0 0 10px var(--brand-teal), 0 0 20px var(--brand-teal);
+  text-shadow: 0 0 12px #731cb2, 0 0 24px #5a2aac;
+}
+
+@keyframes marquee-left {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-50%); }
+}
+
+@keyframes marquee-right {
+  0% { transform: translateX(-50%); }
+  100% { transform: translateX(0%); }
+}
+
+.animate-marquee-left {
+  display: flex;
+  width: max-content;
+  animation: marquee-left 30s linear infinite;
+}
+
+.animate-marquee-right {
+  display: flex;
+  width: max-content;
+  animation: marquee-right 30s linear infinite;
+}
+
+.animate-marquee-left:hover,
+.animate-marquee-right:hover {
+  animation-play-state: paused;
 }
 
 .glass-card {
-  background: rgba(31, 41, 55, 0.4);
+  background: rgba(31, 41, 55, 0.45);
   backdrop-filter: blur(12px);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(90, 42, 172, 0.25);
   position: relative;
   overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.glass-card:hover {
+  border-color: rgba(115, 28, 178, 0.6);
+  box-shadow: 0 0 30px rgba(115, 28, 178, 0.25);
 }
 
 .shimmer-overlay {
@@ -63,15 +136,27 @@
   left: 150%;
 }
 
+/* Authentic, Modern Typography Pairing */
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+  font-family: 'Plus Jakarta Sans', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  letter-spacing: -0.01em;
+}
+
+h1, h2, h3, h4, h5, h6, .font-display, .font-agent-display {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  letter-spacing: -0.025em;
+}
+
+code, pre, .font-mono, .badge-mono, .font-agent-mono {
+  font-family: 'JetBrains Mono', ui-monospace, SFMono-Regular, monospace;
 }
 
 ::selection {
-  background-color: var(--brand-teal);
-  color: var(--brand-darker);
+  background-color: #731cb2;
+  color: #F8FAFC;
 }
 
 /* Lenis Custom Scroll */
@@ -94,10 +179,14 @@ html.lenis {
 .lenis.lenis-scrolling iframe {
   pointer-events: none;
 }
+
 /* Hide native cursor on pointer devices */
 @media (pointer: fine) {
   html, body, a, button, [role="button"] {
     cursor: none !important;
+  }
+  input, textarea {
+    cursor: text !important;
   }
 }
 
@@ -106,13 +195,199 @@ html.lenis {
   width: 5px;
 }
 .custom-scrollbar::-webkit-scrollbar-track {
-  background: rgba(10, 15, 26, 0.5);
+  background: rgba(40, 13, 105, 0.4);
 }
 .custom-scrollbar::-webkit-scrollbar-thumb {
-  background: rgba(0, 210, 180, 0.3);
+  background: rgba(115, 28, 178, 0.6);
   border-radius: 9999px;
 }
 .custom-scrollbar::-webkit-scrollbar-thumb:hover {
-  background: rgba(0, 210, 180, 0.6);
+  background: rgba(161, 125, 224, 0.8);
 }
 
+/* Light Theme Styling Adaptations */
+.light body {
+  background-color: #f8fafc;
+  color: #0f172a;
+}
+
+.light .glass-card {
+  background: rgba(255, 255, 255, 0.88);
+  border: 1px solid rgba(90, 42, 172, 0.15);
+  box-shadow: 0 10px 25px -5px rgba(90, 42, 172, 0.08), 0 8px 10px -6px rgba(0, 0, 0, 0.03);
+}
+
+.light .glass-card:hover {
+  border-color: rgba(115, 28, 178, 0.5);
+}
+
+.light .text-white {
+  color: #0f172a !important;
+}
+
+.light .text-gray-300 {
+  color: #334155 !important;
+}
+
+.light .text-gray-400 {
+  color: #64748b !important;
+}
+
+.light .text-gray-500 {
+  color: #94a3b8 !important;
+}
+
+.light .border-gray-800 {
+  border-color: #e2e8f0 !important;
+}
+
+.light .border-gray-700 {
+  border-color: #cbd5e1 !important;
+}
+
+.light .bg-brand-dark {
+  background-color: #f1f5f9 !important;
+}
+
+.light .bg-brand-darker {
+  background-color: #f8fafc !important;
+}
+
+.light .bg-brand-card {
+  background-color: #ffffff !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.light .bg-brand-dark\/40,
+.light .bg-brand-dark\/50 {
+  background-color: rgba(255, 255, 255, 0.9) !important;
+  border-color: #e2e8f0 !important;
+}
+
+.light .bg-white\/10 {
+  background-color: rgba(90, 42, 172, 0.08) !important;
+}
+
+.light .bg-white\/5 {
+  background-color: rgba(90, 42, 172, 0.04) !important;
+}
+
+.light .border-white\/10,
+.light .border-white\/20 {
+  border-color: rgba(90, 42, 172, 0.15) !important;
+}
+
+.light .nav-logo {
+  filter: none !important;
+}
+
+.light #home {
+  background: linear-gradient(to bottom, #f5f3ff, #f8fafc) !important;
+}
+
+.light #about {
+  background-color: #f1f5f9 !important;
+}
+
+.light #qualifications {
+  background-color: #f8fafc !important;
+}
+
+.light #skills {
+  background-color: #f1f5f9 !important;
+}
+
+.light #projects {
+  background-color: #f8fafc !important;
+}
+
+.light #contact {
+  background-color: #f1f5f9 !important;
+  border-top-color: #e2e8f0 !important;
+}
+
+.light input,
+.light textarea {
+  background-color: #ffffff !important;
+  color: #0f172a !important;
+  border-color: #cbd5e1 !important;
+}
+
+.light input::placeholder,
+.light textarea::placeholder {
+  color: #94a3b8 !important;
+}
+
+/* AI Agent Light Mode High-Contrast Adaptations */
+.light .text-gray-200 {
+  color: #1e293b !important;
+}
+
+.light .ai-chat-modal {
+  background-color: rgba(40, 13, 105, 0.98) !important;
+  border-color: #5a2aac !important;
+  box-shadow: 0 25px 50px -12px rgba(40, 13, 105, 0.35) !important;
+}
+
+.light .ai-chat-header {
+  background-color: #45106c !important;
+  border-color: #5a2aac !important;
+  color: #F8FAFC !important;
+}
+
+.light .ai-chat-header h3,
+.light .ai-chat-header span {
+  color: #F8FAFC !important;
+}
+
+.light .ai-chat-body {
+  background-color: #280d69 !important;
+}
+
+.light .ai-bot-bubble {
+  background-color: #45106c !important;
+  color: #F8FAFC !important;
+  border-color: #5a2aac !important;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15) !important;
+}
+
+.light .ai-bot-bubble * {
+  color: #F8FAFC !important;
+}
+
+.light .ai-bot-bubble strong {
+  color: #a17de0 !important;
+}
+
+.light .ai-user-bubble {
+  background: linear-gradient(135deg, #731cb2, #5a2aac) !important;
+  color: #ffffff !important;
+}
+
+.light .ai-action-chip {
+  background-color: #45106c !important;
+  color: #F8FAFC !important;
+  border-color: #5a2aac !important;
+}
+
+.light .ai-action-chip:hover {
+  background-color: #731cb2 !important;
+  border-color: #a17de0 !important;
+  color: #F8FAFC !important;
+}
+
+.light .ai-link-btn {
+  background-color: #280d69 !important;
+  color: #F8FAFC !important;
+  border-color: #5a2aac !important;
+}
+
+.light .ai-link-btn:hover {
+  background-color: #731cb2 !important;
+  color: #F8FAFC !important;
+}
+
+.light .ai-footer {
+  background-color: #45106c !important;
+  border-color: #5a2aac !important;
+}

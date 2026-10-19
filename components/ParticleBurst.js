@@ -81,7 +81,7 @@ const BurstEffect = ({ x, y }) => {
       {petals.map((_, i) => (
         <div 
           key={i}
-          className="absolute w-4 h-6 bg-brand-teal/40 border border-brand-teal/50 rounded-full blur-[1px] shadow-[0_0_10px_rgba(0,210,180,0.3)]"
+          className="absolute w-4 h-6 bg-[#731cb2]/50 border border-[#5a2aac] rounded-full blur-[1px] shadow-[0_0_12px_rgba(115,28,178,0.5)]"
           style={{ 
             backdropFilter: 'blur(4px)',
             transform: `rotate(${(i / petals.length) * 360}deg)`,

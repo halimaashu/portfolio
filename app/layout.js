@@ -3,6 +3,7 @@ import SmoothScroll from "../components/SmoothScroll";
 import CustomCursor from "../components/CustomCursor";
 import ParticleBurst from "../components/ParticleBurst";
 import AIAgent from "../components/AIAgent";
+import Preloader from "../components/Preloader";
 
 export const metadata = {
   title: "Ashikur Rahman | MERN Stack Developer",
@@ -21,6 +22,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className="bg-brand-darker text-white font-sans selection:bg-brand-teal selection:text-brand-darker antialiased">
+        <Preloader />
         <CustomCursor />
         <ParticleBurst />
         <SmoothScroll>

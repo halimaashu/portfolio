@@ -54,7 +54,7 @@ const CustomCursor = () => {
         this.baseSize = this.size;
         this.speedX = (Math.random() - 0.5) * 1.5;
         this.speedY = (Math.random() - 0.5) * 1.5;
-        this.color = '#00d2b4';
+        this.color = Math.random() > 0.5 ? '#731cb2' : '#5a2aac';
         this.life = 1;
         this.decay = Math.random() * 0.02 + 0.01;
       }
@@ -135,10 +135,10 @@ const CustomCursor = () => {
       {/* Central Dot */}
       <div
         ref={dotRef}
-        className="fixed top-0 left-0 w-1.5 h-1.5 bg-brand-teal rounded-full -translate-x-1/2 -translate-y-1/2 shadow-[0_0_10px_#00d2b4]"
+        className="fixed top-0 left-0 w-1.5 h-1.5 bg-[#731cb2] rounded-full -translate-x-1/2 -translate-y-1/2 shadow-[0_0_12px_#731cb2]"
         style={{ 
           transform: isHovered ? 'scale(4)' : 'scale(1)',
-          backgroundColor: isHovered ? 'rgba(0, 210, 180, 0.2)' : '#00d2b4',
+          backgroundColor: isHovered ? 'rgba(115, 28, 178, 0.25)' : '#731cb2',
           transition: 'transform 0.3s, background-color 0.3s'
         }}
       />
