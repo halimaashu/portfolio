@@ -57,6 +57,20 @@ export const projects = [
     demo: "https://game-boy-red.vercel.app/"
   },
   {
+  id: "Khalahobe",
+  title: "Khalahobe - Playground & Sports Facility Booking Platform",
+  problem: "Full-stack booking platform where players find grounds, courts and studios and book time slots online, and owners list and manage their facilities.",
+  features: [
+    "Date & Time-Slot Booking from Owner-Defined Hours",
+    "Owner Dashboard to List & Manage Facilities",
+    "Auth with Google Login, Image Uploads & Light/Dark Mode"
+  ],
+  techs: ["Next.js", "Tailwind CSS", "HeroUI", "Better Auth", "MongoDB", "Node.js", "Framer Motion"],
+  image: "./Khala-hobe.png",
+  github: "https://github.com/halimaashu/khela-hobe",
+  demo: "https://khela-hobe-self.vercel.app/"
+},
+  {
     id: "friendvibe",
     title: "FriendVibe - Relationship Management Platform",
     problem: "Helps users track, tend, and nurture meaningful personal relationships with proactive interaction analytics.",
