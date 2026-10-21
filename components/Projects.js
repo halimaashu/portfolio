@@ -19,11 +19,12 @@ const ProjectRow = ({ project, index }) => {
       <div className="shimmer-overlay"></div>
 
       {/* Image Column - Full Height and Full Width on showcase side */}
-      <div className={`lg:col-span-7 w-full min-h-[320px] md:min-h-[400px] h-full rounded-2xl overflow-hidden relative bg-brand-darker border border-gray-800/80 flex items-center justify-center ${isEven ? 'lg:order-1' : 'lg:order-2'}`}>
+      <div className={`lg:col-span-7 w-full min-h-[320px] md:min-h-[400px] h-full rounded-2xl overflow-hidden relative bg-brand-darker border border-none flex items-center justify-center ${isEven ? 'lg:order-1' : 'lg:order-2'}`}>
         <img 
           alt={project.title} 
           className="w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-105" 
           src={project.image} 
+        
           onError={(e) => {
             e.currentTarget.src = "/project_aihub.png";
           }}

@@ -1,4 +1,19 @@
 export const projects = [
+   {
+  id: "BooksHunt",
+  title: "BooksHunt - Online Book Selling Platform",
+  problem: "Full-stack online book store where readers browse, search and buy original books, and admins manage books, users and orders.",
+  features: [
+    "Role-based Admin & User Dashboards",
+    "Secure SSLCOMMERZ Payments & Order Tracking",
+    "Book Search, Category Filters & Wishlist"
+  ],
+  techs: ["Next.js", "Node.js", "Express", "MongoDB", "Better Auth", "SSLCOMMERZ", "Tailwind CSS", "Vercel"],
+  image: "./book-hount-cover.png", // add a BooksHunt screenshot with this file name
+  github: "https://github.com/halimaashu/book-hunt",
+  demo: "https://book-hunt-omega.vercel.app/"
+},
+ 
   {
     id: "youngman",
     title: "YoungMan - Fitness & Fight Camp Platform",
@@ -9,7 +24,7 @@ export const projects = [
       "Community Discussion Forum & JWT Authentication"
     ],
     techs: ["React", "Node.js", "Express", "MongoDB", "Tailwind CSS", "Vercel"],
-    image: "/youngMan.png",
+    image: "./Young-man.png",
     github: "https://github.com/halimaashu/young-man",
     demo: "https://young-man.vercel.app/"
   },
@@ -23,7 +38,7 @@ export const projects = [
       "JWT Secure Authentication & Resume Management"
     ],
     techs: ["React", "Node.js", "Express", "MongoDB", "JWT Auth", "Vercel"],
-    image: "/hireloop.png",
+    image: "./hireloop-cover.png",
     github: "https://github.com/halimaashu/hire-loop",
     demo: "https://hire-loop-beta.vercel.app/"
   },
@@ -37,7 +52,7 @@ export const projects = [
       "Advanced Search, Category Filters & Product Reviews"
     ],
     techs: ["React", "Node.js", "Express", "MongoDB", "Stripe", "Vercel"],
-    image: "/gameBoy.png",
+    image: "./game-boy-cover.png",
     github: "https://github.com/halimaashu/game-boy",
     demo: "https://game-boy-red.vercel.app/"
   },
@@ -51,7 +66,7 @@ export const projects = [
       "Responsive MERN full-stack architecture"
     ],
     techs: ["React", "Node.js", "Express", "MongoDB", "Vercel"],
-    image: "/project_friendvibe.jpg",
+    image: "./project_friendvibe.jpg",
     github: "https://github.com/halimaashu/Friend-vibes.JHOn",
     demo: "https://friend-vibe.vercel.app/"
   },
@@ -64,8 +79,8 @@ export const projects = [
       "Interactive frontier AI catalog & model listings",
       "Modern neon-themed responsive interface"
     ],
-    techs: ["React", "Next.js", "Tailwind CSS", "REST API", "Netlify"],
-    image: "/project_aihub.png",
+    techs: ["React",  "Tailwind CSS", "Netlify"],
+    image: "./ai-fair-cover.png",
     github: "https://github.com/halimaashu/AI-HUbE.ALL",
     demo: "https://ai-hub-all-reserved.netlify.app/"
   },
@@ -79,7 +94,7 @@ export const projects = [
       "Optimized speed and lightweight HTML/Tailwind build"
     ],
     techs: ["HTML5", "Tailwind CSS", "JavaScript", "GitHub Pages"],
-    image: "/project_teahouse.png",
+    image: "./teahouse-cover.png",
     github: "https://github.com/halimaashu/tea-house",
     demo: "https://halimaashu.github.io/tea-house/"
   },{
@@ -92,7 +107,7 @@ export const projects = [
       "Optimized speed and lightweight HTML/Tailwind build"
     ],
     techs: ["HTML5", "Tailwind CSS", "JavaScript", "GitHub Pages"],
-    image: "/podcast.png",
+    image: "./podcast-cover.png",
     github: "https://github.com/halimaashu/Podcast-Website",
     demo: "https://halimaashu.github.io/Podcast-Website/"
   }
