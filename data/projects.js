@@ -99,19 +99,6 @@ export const projects = [
     demo: "https://ai-hub-all-reserved.netlify.app/"
   },
   {
-    id: "teahouse",
-    title: "The Tea House - E-Commerce Showcase",
-    problem: "Interactive showcase for botanical tea products with detailed product cards and customer ratings.",
-    features: [
-      "Clean, responsive product exploration layout",
-      "Customer ratings, pricing cards, and tea features",
-      "Optimized speed and lightweight HTML/Tailwind build"
-    ],
-    techs: ["HTML5", "Tailwind CSS", "JavaScript", "GitHub Pages"],
-    image: "./teahouse-cover.png",
-    github: "https://github.com/halimaashu/tea-house",
-    demo: "https://halimaashu.github.io/tea-house/"
-  },{
     id: "podcast",
     title: "The Podcast Website",
     problem: "Tis is a simple podcast website.",
