@@ -43,7 +43,12 @@ const Hero = () => {
           </motion.div>
 
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-white mb-4 tracking-tight font-display">
-            I'm <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#731cb2] via-[#a17de0] to-[#5a2aac]">Ashikur Rahman</span>
+            I'm <span 
+              className="text-transparent bg-clip-text bg-gradient-to-r from-[#731cb2] via-[#5a2aac] to-[#731cb2] font-extrabold inline-block"
+              style={{ WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}
+            >
+              Ashikur Rahman
+            </span>
           </h1>
 
           <div className="h-16 mb-6">

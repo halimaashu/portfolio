@@ -98,7 +98,10 @@ export default function Preloader() {
             </motion.div>
 
             {/* Percentage Number Display */}
-            <div className="text-5xl md:text-6xl font-black tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-[#731cb2] via-white to-[#a17de0] mb-4 font-mono">
+            <div 
+              className="text-5xl md:text-6xl font-black tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-[#731cb2] via-white to-[#a17de0] mb-4 font-mono"
+              style={{ WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}
+            >
               {progress}%
             </div>
 

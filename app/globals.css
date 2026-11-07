@@ -9,7 +9,7 @@
   --brand-primary: #731cb2;
   --brand-secondary: #5a2aac;
   --brand-accent: #a17de0;
-  --brand-teal: #731cb2; /* Universal primary accent mapping */
+  --brand-teal: #a17de0; /* High-contrast glowing violet accent for dark mode */
   --brand-purple: #5a2aac; /* Secondary indigo mapping */
   --brand-dark: #111827;
   --brand-darker: #0a0f1a;
@@ -406,4 +406,166 @@ html.lenis {
 .light .ai-footer {
   background-color: #45106c !important;
   border-color: #5a2aac !important;
+}
+
+/* Brand Text Gradients with bg-clip-text */
+.bg-clip-text,
+[class*="bg-clip-text"],
+.light .bg-clip-text,
+.light [class*="bg-clip-text"] {
+  color: transparent !important;
+  -webkit-text-fill-color: transparent !important;
+  background-clip: text !important;
+  -webkit-background-clip: text !important;
+}
+
+/* Light Theme Contrast Protections for Brand Buttons (never text spans) */
+.light button[class*="bg-gradient"],
+.light a[class*="bg-gradient"],
+.light .btn-gradient {
+  color: #F8FAFC !important;
+}
+
+/* Light Theme text contrast for #a17de0 (converts to deep electric violet on light surfaces) */
+.light .text-\[\#a17de0\] {
+  color: #731cb2 !important;
+}
+
+.light a.border-\[\#731cb2\].text-\[\#a17de0\] {
+  color: #731cb2 !important;
+  border-color: #731cb2 !important;
+}
+
+.light a.border-\[\#731cb2\].text-\[\#a17de0\]:hover {
+  color: #ffffff !important;
+  background-color: #731cb2 !important;
+}
+
+/* Light mode shimmer overlay with subtle violet glow */
+.light .shimmer-overlay {
+  background: linear-gradient(
+    to right,
+    transparent,
+    rgba(115, 28, 178, 0.08),
+    transparent
+  ) !important;
+}
+
+/* Light mode custom cursor canvas visibility */
+.light canvas {
+  mix-blend-mode: normal !important;
+}
+
+/* Light mode mobile navigation menu */
+.light .mobile-menu-glass {
+  background-color: rgba(255, 255, 255, 0.96) !important;
+  border-color: rgba(226, 232, 240, 0.9) !important;
+  box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Contact Section Social Bubbles */
+.contact-bubble {
+  background-color: #1f2937;
+  border: 1px solid rgba(115, 28, 178, 0.4);
+  color: #a17de0;
+  transition: all 0.3s ease;
+}
+
+.contact-bubble svg {
+  color: #a17de0;
+  transition: color 0.3s ease;
+}
+
+.contact-bubble svg[fill="currentColor"] {
+  fill: #a17de0;
+}
+
+.contact-bubble svg[fill="none"] {
+  fill: none !important;
+  stroke: #a17de0;
+}
+
+.group:hover .contact-bubble {
+  background: linear-gradient(135deg, #731cb2, #5a2aac) !important;
+  border-color: #731cb2 !important;
+  color: #ffffff !important;
+  box-shadow: 0 0 20px rgba(115, 28, 178, 0.5) !important;
+  transform: scale(1.08);
+}
+
+.group:hover .contact-bubble svg {
+  color: #ffffff !important;
+}
+
+.group:hover .contact-bubble svg[fill="currentColor"] {
+  fill: #ffffff !important;
+}
+
+.group:hover .contact-bubble svg[fill="none"] {
+  fill: none !important;
+  stroke: #ffffff !important;
+}
+
+/* Contact Bubbles: Light Mode Initial & Hover */
+.light .contact-bubble {
+  background-color: #ffffff !important;
+  border: 1.5px solid rgba(115, 28, 178, 0.35) !important;
+  color: #731cb2 !important;
+  box-shadow: 0 4px 12px rgba(115, 28, 178, 0.1) !important;
+}
+
+.light .contact-bubble svg {
+  color: #731cb2 !important;
+}
+
+.light .contact-bubble svg[fill="currentColor"] {
+  fill: #731cb2 !important;
+}
+
+.light .contact-bubble svg[fill="none"] {
+  fill: none !important;
+  stroke: #731cb2 !important;
+}
+
+.light a.group:hover .contact-bubble,
+.light .group:hover .contact-bubble {
+  background: linear-gradient(135deg, #731cb2, #5a2aac) !important;
+  border-color: #731cb2 !important;
+  color: #ffffff !important;
+  box-shadow: 0 0 20px rgba(115, 28, 178, 0.45) !important;
+  transform: scale(1.08);
+}
+
+.light a.group:hover .contact-bubble svg,
+.light .group:hover .contact-bubble svg {
+  color: #ffffff !important;
+}
+
+.light a.group:hover .contact-bubble svg[fill="currentColor"],
+.light .group:hover .contact-bubble svg[fill="currentColor"] {
+  fill: #ffffff !important;
+}
+
+.light a.group:hover .contact-bubble svg[fill="none"],
+.light .group:hover .contact-bubble svg[fill="none"] {
+  fill: none !important;
+  stroke: #ffffff !important;
+}
+
+/* Light mode Navbar Social Icon buttons */
+.light .nav-social-btn {
+  color: #334155 !important;
+  background-color: rgba(115, 28, 178, 0.06) !important;
+  border-color: rgba(115, 28, 178, 0.15) !important;
+}
+
+.light .nav-social-btn:hover {
+  background: linear-gradient(135deg, #731cb2, #5a2aac) !important;
+  color: #ffffff !important;
+  border-color: #731cb2 !important;
+  box-shadow: 0 0 15px rgba(115, 28, 178, 0.3) !important;
+}
+
+.light .nav-social-btn:hover svg {
+  fill: #ffffff !important;
 }

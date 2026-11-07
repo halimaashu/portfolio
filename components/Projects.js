@@ -91,7 +91,7 @@ const ProjectRow = ({ project, index }) => {
             )}
             {project.demo && (
               <a 
-                className="flex-1 text-center py-3 px-4 bg-gradient-to-r from-[#731cb2] to-[#5a2aac] text-white rounded-xl font-bold hover:opacity-90 transition-all duration-300 text-sm shadow-[0_0_20px_rgba(115,28,178,0.4)]" 
+                className="flex-1 text-center py-3 px-4 bg-gradient-to-r from-[#731cb2] to-[#5a2aac] text-[#F8FAFC] rounded-xl font-bold hover:opacity-90 transition-all duration-300 text-sm shadow-[0_0_20px_rgba(115,28,178,0.4)]" 
                 href={project.demo}
                 target="_blank"
                 rel="noopener noreferrer"
@@ -174,7 +174,7 @@ const Projects = () => {
                 onClick={() => { if (showAll) toggleShowAll(); }}
                 className={`px-4 py-1.5 rounded-xl text-xs font-semibold transition-all duration-300 ${
                   !showAll
-                    ? 'bg-gradient-to-r from-[#731cb2] to-[#5a2aac] text-white shadow-md'
+                    ? 'bg-gradient-to-r from-[#731cb2] to-[#5a2aac] text-[#F8FAFC] shadow-md'
                     : 'text-gray-400 hover:text-white'
                 }`}
               >
@@ -184,7 +184,7 @@ const Projects = () => {
                 onClick={() => { if (!showAll) toggleShowAll(); }}
                 className={`px-4 py-1.5 rounded-xl text-xs font-semibold transition-all duration-300 ${
                   showAll
-                    ? 'bg-gradient-to-r from-[#731cb2] to-[#5a2aac] text-white shadow-md'
+                    ? 'bg-gradient-to-r from-[#731cb2] to-[#5a2aac] text-[#F8FAFC] shadow-md'
                     : 'text-gray-400 hover:text-white'
                 }`}
               >
@@ -254,7 +254,7 @@ const Projects = () => {
                       onClick={() => handlePageChange(pageNum)}
                       className={`w-10 h-10 rounded-xl text-sm font-bold transition-all duration-300 flex items-center justify-center ${
                         isActive
-                          ? 'bg-gradient-to-r from-[#731cb2] to-[#5a2aac] text-white shadow-[0_0_20px_rgba(115,28,178,0.5)] border border-[#a17de0]/40 scale-105'
+                          ? 'bg-gradient-to-r from-[#731cb2] to-[#5a2aac] text-[#F8FAFC] shadow-[0_0_20px_rgba(115,28,178,0.5)] border border-[#a17de0]/40 scale-105'
                           : 'glass-card text-gray-300 hover:text-white hover:border-[#731cb2]/50 hover:bg-white/10 active:scale-95'
                       }`}
                       aria-label={`Go to page ${pageNum}`}
