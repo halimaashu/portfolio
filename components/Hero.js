@@ -1,7 +1,6 @@
 'use client';
 
 import React, { useState, useEffect } from 'react';
-import Navbar from './Navbar';
 import { motion, AnimatePresence } from 'framer-motion';
 
 const titles = ["MERN Stack Developer", "Full Stack Developer", "Problem Solver"];
@@ -18,9 +17,7 @@ const Hero = () => {
 
   return (
     <section className="relative min-h-screen bg-gradient-to-b from-[#1a1c2e] to-brand-darker overflow-hidden" id="home">
-      <Navbar />
-      
-      <div className="max-w-7xl mx-auto px-8 pt-12 pb-24 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center min-h-[calc(100vh-100px)]">
+      <div className="max-w-7xl mx-auto px-8 pt-28 md:pt-32 pb-24 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center min-h-screen">
         
         {/* Left Content */}
         <motion.div 
