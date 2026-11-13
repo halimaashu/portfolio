@@ -1,10 +1,7 @@
 'use client';
 
-import React, { useEffect, useRef } from 'react';
-import gsap from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
-
-gsap.registerPlugin(ScrollTrigger);
+import React from 'react';
+import { motion } from 'framer-motion';
 
 const education = [
   {
@@ -28,58 +25,20 @@ const education = [
 ];
 
 const Qualifications = () => {
-  const sectionRef = useRef(null);
-  const lineRef = useRef(null);
-  const itemsRef = useRef([]);
-
-  useEffect(() => {
-    const ctx = gsap.context(() => {
-      // Smooth timeline line reveal
-      gsap.fromTo(lineRef.current, 
-        { scaleY: 0 },
-        { 
-          scaleY: 1, 
-          ease: "none",
-          scrollTrigger: {
-            trigger: sectionRef.current,
-            start: "top 70%",
-            end: "bottom 80%",
-            scrub: true
-          }
-        }
-      );
-
-      // Staggered timeline items reveal
-      itemsRef.current.forEach((item, index) => {
-        if (!item) return;
-        gsap.fromTo(item,
-          { opacity: 0, x: index % 2 === 0 ? -40 : 40 },
-          {
-            opacity: 1,
-            x: 0,
-            duration: 0.9,
-            ease: "power3.out",
-            scrollTrigger: {
-              trigger: item,
-              start: "top 85%",
-              toggleActions: "play none none reverse"
-            }
-          }
-        );
-      });
-    }, sectionRef);
-
-    return () => ctx.revert();
-  }, []);
-
   return (
-    <section className="py-12 md:py-16 bg-brand-darker relative overflow-hidden" id="qualifications" ref={sectionRef}>
+    <section className="py-12 md:py-16 bg-brand-darker relative overflow-hidden" id="qualifications">
       {/* Background Subtle Ambience */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-[#731cb2]/10 rounded-full blur-[140px] pointer-events-none"></div>
 
       <div className="max-w-5xl mx-auto px-6 sm:px-8 relative z-10">
         {/* Section Header */}
-        <div className="text-center mb-8">
+        <motion.div 
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5 }}
+          className="text-center mb-8"
+        >
           <div className="inline-flex items-center space-x-2 bg-[#731cb2]/10 border border-[#731cb2]/30 px-3.5 py-1.5 rounded-full mb-2.5">
             <span className="w-2 h-2 rounded-full bg-[#a17de0]"></span>
             <span className="text-xs font-semibold uppercase tracking-widest text-[#a17de0] font-mono">
@@ -92,7 +51,7 @@ const Qualifications = () => {
           <p className="text-gray-300 text-sm sm:text-base">
             My educational journey and technical credentials
           </p>
-        </div>
+        </motion.div>
 
         {/* Education Category Tab Indicator */}
         <div className="flex justify-center items-center mb-8">
@@ -108,18 +67,18 @@ const Qualifications = () => {
         {/* Vertical Timeline */}
         <div className="relative">
           {/* Vertical Central Line */}
-          <div 
-            ref={lineRef}
-            className="absolute left-1/2 transform -translate-x-1/2 w-[2px] bg-gradient-to-b from-[#731cb2] via-[#5a2aac] to-transparent h-full origin-top"
-          ></div>
+          <div className="absolute left-1/2 transform -translate-x-1/2 w-[2px] bg-gradient-to-b from-[#731cb2] via-[#5a2aac] to-transparent h-full origin-top"></div>
 
           <div className="space-y-10 md:space-y-12">
             {education.map((edu, index) => {
               const isEven = index % 2 === 0;
               return (
-                <div 
+                <motion.div 
                   key={index}
-                  ref={el => itemsRef.current[index] = el}
+                  initial={{ opacity: 0, x: isEven ? -30 : 30 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  viewport={{ once: true, margin: "-30px" }}
+                  transition={{ duration: 0.6, delay: index * 0.15 }}
                   className={`flex items-center w-full ${isEven ? 'justify-start' : 'justify-end'}`}
                 >
                   <div className={`w-1/2 ${isEven ? 'pr-8 sm:pr-12 text-right' : 'pl-8 sm:pl-12 text-left'} relative`}>
@@ -153,7 +112,7 @@ const Qualifications = () => {
                     </div>
 
                   </div>
-                </div>
+                </motion.div>
               );
             })}
           </div>

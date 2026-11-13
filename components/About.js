@@ -1,102 +1,61 @@
 'use client';
 
-import React, { useEffect, useRef } from 'react';
-import gsap from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import React from 'react';
+import { motion } from 'framer-motion';
 
-gsap.registerPlugin(ScrollTrigger);
+const principles = [
+  {
+    title: "Fast",
+    desc: "Optimized for speed and rapid interaction.",
+    icon: (
+      <svg className="w-7 h-7 text-brand-teal" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path d="M13 10V3L4 14h7v7l9-11h-7z" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"></path>
+      </svg>
+    )
+  },
+  {
+    title: "Responsive",
+    desc: "Layouts that work on any device size.",
+    icon: (
+      <svg className="w-7 h-7 text-brand-teal" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"></path>
+      </svg>
+    )
+  },
+  {
+    title: "Intuitive",
+    desc: "Easy to use and navigate user interfaces.",
+    icon: (
+      <svg className="w-7 h-7 text-brand-teal" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"></path>
+      </svg>
+    )
+  },
+  {
+    title: "Dynamic",
+    desc: "Websites don't have to be static objects.",
+    icon: (
+      <svg className="w-7 h-7 text-brand-teal" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"></path>
+      </svg>
+    )
+  }
+];
 
 const About = () => {
-  const sectionRef = useRef(null);
-  const profileRef = useRef(null);
-  const textRef = useRef(null);
-  const principlesRef = useRef(null);
-
-  const principles = [
-    {
-      title: "Fast",
-      desc: "Optimized for speed and rapid interaction.",
-      icon: (
-        <svg className="w-8 h-8 text-brand-teal" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path d="M13 10V3L4 14h7v7l9-11h-7z" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"></path>
-        </svg>
-      )
-    },
-    {
-      title: "Responsive",
-      desc: "Layouts that work on any device size.",
-      icon: (
-        <svg className="w-8 h-8 text-brand-teal" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"></path>
-        </svg>
-      )
-    },
-    {
-      title: "Intuitive",
-      desc: "Easy to use and navigate user interfaces.",
-      icon: (
-        <svg className="w-8 h-8 text-brand-teal" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"></path>
-        </svg>
-      )
-    },
-    {
-      title: "Dynamic",
-      desc: "Websites don't have to be static objects.",
-      icon: (
-        <svg className="w-8 h-8 text-brand-teal" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"></path>
-        </svg>
-      )
-    }
-  ];
-
-  useEffect(() => {
-    const ctx = gsap.context(() => {
-      // Profile reveal
-      gsap.from(profileRef.current, {
-        x: -100,
-        opacity: 0,
-        duration: 1,
-        scrollTrigger: {
-          trigger: sectionRef.current,
-          start: "top 70%",
-        }
-      });
-
-      // Text reveal
-      gsap.from(textRef.current, {
-        x: 100,
-        opacity: 0,
-        duration: 1,
-        scrollTrigger: {
-          trigger: sectionRef.current,
-          start: "top 70%",
-        }
-      });
-
-      // Principles reveal
-      gsap.from(".principle-card", {
-        y: 50,
-        opacity: 0,
-        stagger: 0.2,
-        duration: 0.8,
-        ease: "power3.out",
-        scrollTrigger: {
-          trigger: principlesRef.current,
-          start: "top 80%",
-        }
-      });
-    }, sectionRef);
-
-    return () => ctx.revert();
-  }, []);
-
   return (
-    <section ref={sectionRef} className="pt-12 md:pt-16 pb-4 md:pb-6 bg-brand-dark overflow-hidden" id="about">
+    <section className="pt-12 md:pt-16 pb-4 md:pb-6 bg-brand-dark overflow-hidden" id="about">
       <div className="max-w-7xl mx-auto px-6 sm:px-8">
         <div className="flex flex-col-reverse md:flex-row items-center gap-8 md:gap-10">
-          <div ref={profileRef} className="relative flex-shrink-0">
+          
+          {/* Profile Image */}
+          <motion.div 
+            initial={{ opacity: 0, x: -40 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="relative flex-shrink-0"
+          >
             <div className="w-56 h-56 sm:w-64 sm:h-64 rounded-full border-4 border-[#731cb2] p-1 overflow-hidden shadow-[0_0_35px_rgba(115,28,178,0.45)]">
               <img 
                 alt="Ashikur Rahman Profile" 
@@ -105,8 +64,16 @@ const About = () => {
                 style={{ objectPosition: 'center 20%' }}
               />
             </div>
-          </div>
-          <div ref={textRef} className="flex-1 text-center md:text-left">
+          </motion.div>
+
+          {/* About Text */}
+          <motion.div 
+            initial={{ opacity: 0, x: 40 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="flex-1 text-center md:text-left"
+          >
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-3 font-display text-white">About Me</h2>
             <p className="text-gray-300 text-base sm:text-lg leading-relaxed max-w-2xl">
               I am <span className="text-white font-semibold">Ashikur Rahman</span>, a dedicated <span className="text-[#a17de0] font-semibold">MERN Stack Developer</span> currently pursuing my Diploma in <span className="text-[#a17de0] font-semibold">Computer Science & Technology (CST)</span> at <span className="text-white font-semibold">Dhaka Polytechnic Institute</span>. 
@@ -127,18 +94,26 @@ const About = () => {
                 Resume
               </a>
             </div>
-          </div>
+          </motion.div>
         </div>
         
-        <div ref={principlesRef} className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 mt-12 md:mt-14">
+        {/* Core Principles Cards (Fast, Responsive, Intuitive, Dynamic) */}
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 mt-12 md:mt-14">
           {principles.map((principle, index) => (
-            <div key={index} className="principle-card flex flex-col items-center text-center p-4 rounded-2xl glass-card border border-[#5a2aac]/20">
+            <motion.div 
+              key={index} 
+              initial={{ opacity: 0, y: 25 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: index * 0.1 }}
+              className="principle-card flex flex-col items-center text-center p-4 rounded-2xl glass-card border border-[#5a2aac]/20"
+            >
               <div className="w-14 h-14 bg-[#731cb2]/15 rounded-xl flex items-center justify-center mb-3 border border-[#5a2aac]/40 group hover:border-[#731cb2] hover:shadow-[0_0_20px_rgba(115,28,178,0.3)] transition-all">
                 {principle.icon}
               </div>
               <h4 className="font-bold text-base sm:text-lg mb-1 text-white font-display">{principle.title}</h4>
               <p className="text-xs sm:text-sm text-gray-400">{principle.desc}</p>
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>
