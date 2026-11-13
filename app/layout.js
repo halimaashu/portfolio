@@ -1,6 +1,5 @@
 import "./globals.css";
 import SmoothScroll from "../components/SmoothScroll";
-import CustomCursor from "../components/CustomCursor";
 import ParticleBurst from "../components/ParticleBurst";
 import AIAgent from "../components/AIAgent";
 import Preloader from "../components/Preloader";
@@ -23,7 +22,6 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className="bg-brand-darker font-sans selection:bg-brand-teal selection:text-brand-darker antialiased">
         <Preloader />
-        <CustomCursor />
         <ParticleBurst />
         <SmoothScroll>
           {children}

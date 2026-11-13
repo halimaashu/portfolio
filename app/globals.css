@@ -185,15 +185,6 @@ html.lenis {
   pointer-events: none;
 }
 
-/* Hide native cursor on pointer devices */
-@media (pointer: fine) {
-  html, body, a, button, [role="button"] {
-    cursor: none !important;
-  }
-  input, textarea {
-    cursor: text !important;
-  }
-}
 
 /* AI Chat Scrollbar */
 .custom-scrollbar::-webkit-scrollbar {
@@ -604,10 +595,6 @@ html.lenis {
   ) !important;
 }
 
-/* Light mode custom cursor canvas visibility */
-.light canvas {
-  mix-blend-mode: normal !important;
-}
 
 /* Light mode mobile navigation menu */
 .light .mobile-menu-glass {
