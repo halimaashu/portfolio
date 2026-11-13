@@ -283,6 +283,35 @@ function generateNaturalChatbotResponse(userText) {
   };
 }
 
+function renderFormattedMessage(text) {
+  if (!text) return null;
+  const paragraphs = text.split('\n\n');
+  return paragraphs.map((para, pIdx) => {
+    const lines = para.split('\n');
+    return (
+      <div key={pIdx} className={pIdx > 0 ? "mt-2.5" : ""}>
+        {lines.map((line, lIdx) => {
+          const parts = line.split(/(\*\*.*?\*\*)/g);
+          return (
+            <div key={lIdx} className="leading-relaxed">
+              {parts.map((part, partIdx) => {
+                if (part.startsWith('**') && part.endsWith('**')) {
+                  return (
+                    <strong key={partIdx} className="font-bold ai-bold-highlight">
+                      {part.slice(2, -2)}
+                    </strong>
+                  );
+                }
+                return part;
+              })}
+            </div>
+          );
+        })}
+      </div>
+    );
+  });
+}
+
 export default function AIAgent() {
   const [isOpen, setIsOpen] = useState(false);
   const [messages, setMessages] = useState([INITIAL_MESSAGE]);

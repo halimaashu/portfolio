@@ -28,9 +28,9 @@ const Contact = () => {
   };
 
   return (
-    <footer className="py-20 md:py-24 bg-brand-darker border-t border-gray-800" id="contact">
+    <footer className="py-12 md:py-16 bg-brand-darker border-t border-gray-800" id="contact">
       <div className="max-w-7xl mx-auto px-6 sm:px-8">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
           {/* Contact Info */}
           <div>
             <h2 className="text-3xl sm:text-4xl font-extrabold text-white mb-4 font-display">Let's talk?</h2>
@@ -123,7 +123,7 @@ const Contact = () => {
             </form>
           </div>
         </div>
-        <div className="mt-16 pt-8 border-t border-gray-800 text-center text-gray-400 text-xs sm:text-sm">
+        <div className="mt-10 pt-6 border-t border-gray-800 text-center text-gray-400 text-xs sm:text-sm">
           <p>© 2026 Ashikur Rahman. All Rights Reserved.</p>
         </div>
       </div>

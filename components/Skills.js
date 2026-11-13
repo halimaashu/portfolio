@@ -249,34 +249,34 @@ const SkillCard = ({ skill }) => (
 
 const Skills = () => {
   return (
-    <section className="py-20 md:py-24 bg-brand-dark overflow-hidden relative" id="skills">
+    <section className="py-12 md:py-16 bg-brand-dark overflow-hidden relative" id="skills">
       {/* Background Ambience */}
       <div className="absolute top-1/3 left-1/4 -translate-y-1/2 w-80 h-80 bg-[#731cb2]/10 rounded-full blur-[140px] pointer-events-none"></div>
       <div className="absolute bottom-1/3 right-1/4 w-80 h-80 bg-[#5a2aac]/15 rounded-full blur-[140px] pointer-events-none"></div>
 
       <div className="max-w-7xl mx-auto px-6 sm:px-8">
         {/* Section Header */}
-        <div className="text-center mb-16">
-          <div className="inline-flex items-center space-x-2 bg-[#731cb2]/10 border border-[#731cb2]/30 px-3.5 py-1.5 rounded-full mb-3">
+        <div className="text-center mb-8">
+          <div className="inline-flex items-center space-x-2 bg-[#731cb2]/10 border border-[#731cb2]/30 px-3.5 py-1.5 rounded-full mb-2.5">
             <span className="w-2 h-2 rounded-full bg-[#a17de0]"></span>
             <span className="text-xs font-semibold uppercase tracking-widest text-[#a17de0] font-mono">
               Expertise & Technologies
             </span>
           </div>
-          <h2 className="text-4xl md:text-5xl font-extrabold text-white font-display mb-4">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white font-display mb-2.5">
             Technical Arsenal
           </h2>
-          <p className="text-gray-300 text-base sm:text-lg max-w-2xl mx-auto leading-relaxed">
+          <p className="text-gray-300 text-sm sm:text-base max-w-2xl mx-auto leading-relaxed">
             Organized across frontend engineering, backend architecture, and production tools that I use to deliver end-to-end web applications.
           </p>
         </div>
 
         {/* Categorized Skills Layout */}
-        <div className="space-y-12 sm:space-y-16">
+        <div className="space-y-8 md:space-y-10">
           {skillCategories.map((category) => (
             <div key={category.id} className="relative">
               {/* Category Header */}
-              <div className="flex flex-col sm:flex-row sm:items-end justify-between mb-6 pb-3 border-b border-gray-800">
+              <div className="flex flex-col sm:flex-row sm:items-end justify-between mb-4 pb-2.5 border-b border-gray-800">
                 <div>
                   <div className="flex items-center space-x-3 mb-1">
                     <span className="text-xs font-mono font-semibold text-[#a17de0] uppercase tracking-wider">
@@ -307,7 +307,7 @@ const Skills = () => {
         </div>
 
         {/* GitHub Repositories Link Callout */}
-        <div className="mt-16 text-center">
+        <div className="mt-10 text-center">
           <a
             href="https://github.com/halimaashu"
             target="_blank"

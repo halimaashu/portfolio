@@ -16,8 +16,8 @@ const Hero = () => {
   }, []);
 
   return (
-    <section className="relative min-h-[calc(100vh-4rem)] flex items-center bg-gradient-to-b from-[#1a1c2e] to-brand-darker overflow-hidden" id="home">
-      <div className="max-w-7xl mx-auto px-6 sm:px-8 pt-24 md:pt-28 pb-16 md:pb-20 w-full grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+    <section className="relative bg-gradient-to-b from-[#1a1c2e] to-brand-darker overflow-hidden" id="home">
+      <div className="max-w-7xl mx-auto px-6 sm:px-8 pt-20 md:pt-24 pb-8 md:pb-12 w-full grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-10 items-center">
         
         {/* Left Content (lg:col-span-7) */}
         <motion.div 
@@ -30,7 +30,7 @@ const Hero = () => {
           <motion.div 
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
-            className="flex items-center space-x-2.5 mb-5 bg-[#731cb2]/10 border border-[#731cb2]/30 px-3.5 py-1.5 rounded-full"
+            className="flex items-center space-x-2.5 mb-4 bg-[#731cb2]/10 border border-[#731cb2]/30 px-3.5 py-1.5 rounded-full"
           >
             <span className="text-sm font-semibold text-[#a17de0] hero-badge-text">Hi There!</span>
             <motion.span 
@@ -42,7 +42,7 @@ const Hero = () => {
             </motion.span>
           </motion.div>
 
-          <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-white mb-3 tracking-tight font-display">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-white mb-2.5 tracking-tight font-display">
             I'm <span 
               className="text-transparent bg-clip-text bg-gradient-to-r from-[#731cb2] via-[#5a2aac] to-[#a17de0] font-extrabold inline-block"
               style={{ WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}
@@ -51,7 +51,7 @@ const Hero = () => {
             </span>
           </h1>
 
-          <div className="h-12 sm:h-14 mb-4 flex items-center">
+          <div className="h-10 sm:h-12 mb-3 flex items-center">
             <AnimatePresence mode="wait">
               <motion.p 
                 key={titles[index]}
@@ -59,14 +59,14 @@ const Hero = () => {
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, y: -15 }}
                 transition={{ duration: 0.4 }}
-                className="text-gray-200 text-2xl sm:text-3xl md:text-4xl font-bold font-display"
+                className="text-gray-200 text-xl sm:text-2xl md:text-3xl font-bold font-display"
               >
                 {titles[index]}
               </motion.p>
             </AnimatePresence>
           </div>
 
-          <p className="text-gray-300 text-base sm:text-lg max-w-xl mb-8 leading-relaxed">
+          <p className="text-gray-300 text-base sm:text-lg max-w-xl mb-6 leading-relaxed">
             A passionate MERN Stack Developer building scalable, full-stack web applications with React, Next.js, Node.js, Express, and MongoDB.
           </p>
 
@@ -105,13 +105,13 @@ const Hero = () => {
           className="lg:col-span-5 relative flex items-center justify-center order-first lg:order-last"
         >
           {/* Decorative Ambient Glows */}
-          <div className="absolute inset-0 bg-[#731cb2]/20 rounded-full blur-[110px] pointer-events-none animate-pulse"></div>
-          <div className="absolute -top-6 -right-6 w-60 h-60 bg-[#5a2aac]/25 rounded-full blur-[90px] pointer-events-none"></div>
+          <div className="absolute inset-0 bg-[#731cb2]/20 rounded-full blur-[100px] pointer-events-none animate-pulse"></div>
+          <div className="absolute -top-4 -right-4 w-52 h-52 bg-[#5a2aac]/25 rounded-full blur-[80px] pointer-events-none"></div>
 
           <motion.div
-            animate={{ y: [-10, 10, -10] }}
+            animate={{ y: [-8, 8, -8] }}
             transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
-            className="relative z-10 w-64 h-64 sm:w-80 sm:h-80 md:w-96 md:h-96 lg:w-[410px] lg:h-[410px] xl:w-[440px] xl:h-[440px] rounded-full border-4 border-[#731cb2] p-2 sm:p-2.5 overflow-hidden shadow-[0_0_45px_rgba(115,28,178,0.45)] bg-brand-dark/40"
+            className="relative z-10 w-60 h-60 sm:w-72 sm:h-72 md:w-80 md:h-80 lg:w-[380px] lg:h-[380px] xl:w-[410px] xl:h-[410px] rounded-full border-4 border-[#731cb2] p-2 sm:p-2.5 overflow-hidden shadow-[0_0_40px_rgba(115,28,178,0.45)] bg-brand-dark/40"
           >
             <img 
               alt="Ashikur Rahman Profile" 

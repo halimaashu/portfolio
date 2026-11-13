@@ -16,7 +16,7 @@ const ProjectRow = ({ project, index }) => {
       animate={{ opacity: 1, y: 0 }}
       exit={{ opacity: 0, y: -20 }}
       transition={{ duration: 0.5, delay: (index % PROJECTS_PER_PAGE) * 0.1 }}
-      className="glass-card rounded-3xl overflow-hidden border border-gray-800 hover:border-brand-teal/50 transition-all p-6 md:p-8 grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch group relative mb-8 md:mb-12 shadow-2xl"
+      className="glass-card rounded-3xl overflow-hidden border border-gray-800 hover:border-brand-teal/50 transition-all p-6 md:p-8 grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch group relative mb-6 md:mb-8 shadow-2xl"
     >
       {/* Shimmer Overlay */}
       <div className="shimmer-overlay"></div>
@@ -150,10 +150,10 @@ const Projects = () => {
   };
 
   return (
-    <section className="py-20 md:py-24 bg-brand-dark relative" id="projects">
+    <section className="py-12 md:py-16 bg-brand-dark relative" id="projects">
       <div className="max-w-7xl mx-auto px-6 sm:px-8">
         {/* Section Header */}
-        <div className="text-center mb-16">
+        <div className="text-center mb-8">
           <div className="inline-flex items-center space-x-2 bg-brand-teal/10 px-4 py-1.5 rounded-full border border-brand-teal/20 mb-3">
             <span className="w-2 h-2 rounded-full bg-brand-teal animate-pulse"></span>
             <span className="text-brand-teal font-medium text-xs tracking-widest uppercase">

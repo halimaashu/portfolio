@@ -21,7 +21,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className="bg-brand-darker text-white font-sans selection:bg-brand-teal selection:text-brand-darker antialiased">
+      <body className="bg-brand-darker font-sans selection:bg-brand-teal selection:text-brand-darker antialiased">
         <Preloader />
         <CustomCursor />
         <ParticleBurst />
