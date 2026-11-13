@@ -38,12 +38,12 @@ function generateNaturalChatbotResponse(userText) {
     q.includes('reason to hire')
   ) {
     return {
-      text: "🌟 **Why Choose Ashikur Rahman?**\n\nHere are 5 core reasons why Ashikur is an exceptional hire for your engineering team or freelance project:\n\n1. **True End-to-End MERN Mastery**: Not just a UI designer; he architects complete, production-ready full-stack applications from React 19/Next.js frontends to Node.js/Express REST APIs and optimized MongoDB database schemas.\n\n2. **Proven Full-Stack Track Record**: Built real-world platforms like **YoungMan** (role-based dashboards & booking), **Hire_Loop** (applicant tracking system), and **Game Boy** (Stripe checkout & order management).\n\n3. **Obsession with Motion & Performance**: Masters 60FPS fluid animations using GSAP, Framer Motion, and Lenis smooth scrolling, ensuring high user retention and award-winning aesthetics.\n\n4. **Rapid Learner & Dedicated Problem Solver**: Currently pursuing his Diploma in CST at Dhaka Polytechnic Institute (Expected 2028), continuously building and deploying production SaaS applications.\n\n5. **Seamless Collaboration**: Proactive communication, clean Git commit workflows, and fast turnaround times on milestones.",
+      text: "**Why Choose Ashikur Rahman?**\n\nHere are 5 core reasons why Ashikur is an exceptional hire for your engineering team or freelance project:\n\n1. **True End-to-End MERN Mastery**: Not just a UI designer; he architects complete, production-ready full-stack applications from React 19/Next.js frontends to Node.js/Express REST APIs and optimized MongoDB database schemas.\n\n2. **Proven Full-Stack Track Record**: Built real-world platforms like **YoungMan** (role-based dashboards & booking), **Hire_Loop** (applicant tracking system), and **Game Boy** (Stripe checkout & order management).\n\n3. **Obsession with Motion & Performance**: Masters 60FPS fluid animations using GSAP, Framer Motion, and Lenis smooth scrolling, ensuring high user retention and award-winning aesthetics.\n\n4. **Rapid Learner & Dedicated Problem Solver**: Currently pursuing his Diploma in CST at Dhaka Polytechnic Institute (Expected 2028), continuously building and deploying production SaaS applications.\n\n5. **Seamless Collaboration**: Proactive communication, clean Git commit workflows, and fast turnaround times on milestones.",
       tokens: 184,
       links: [
-        { label: "💬 Discuss Your Role/Project on WhatsApp", url: "https://wa.me/8801975665249", primary: true },
-        { label: "📄 Download Official Resume (PDF)", url: "https://drive.google.com/file/d/1IZvW7-Ujbg3V-GMN-SSme2JgMyRP0hFc/view?usp=drive_link" },
-        { label: "📧 Email Ashikur", url: "mailto:halima520ashu@gmail.com" }
+        { label: "Discuss Your Role/Project on WhatsApp", url: "https://wa.me/8801975665249", primary: true },
+        { label: "Resume (PDF)", url: "https://drive.google.com/file/d/1IZvW7-Ujbg3V-GMN-SSme2JgMyRP0hFc/view?usp=drive_link" },
+        { label: "Email Ashikur", url: "mailto:halima520ashu@gmail.com" }
       ]
     };
   }
@@ -152,7 +152,7 @@ function generateNaturalChatbotResponse(userText) {
       text: "👨‍💻 **About Ashikur Rahman (Ashik)**:\n\n• **Professional Role**: MERN Stack & Full-Stack Web Developer.\n• **Location**: Dhaka, Bangladesh (Open for global remote work).\n• **Education**:\n  - Currently pursuing a **Diploma in Computer Science & Technology (CST)** at **Dhaka Polytechnic Institute** (2024 - Present, Expected 2028).\n  - Completed SSC from **Khamar Miniram High School** (2024).\n• **Core Passion**: Building high-performance, accessible, and visually captivating web applications that solve real-world problems.\n• **Key Strengths**: Full-stack MERN development, dynamic UI animations (GSAP/Framer Motion), database modeling, and clean API design.",
       tokens: 175,
       links: [
-        { label: "📄 Download Resume (PDF)", url: "https://drive.google.com/file/d/1IZvW7-Ujbg3V-GMN-SSme2JgMyRP0hFc/view?usp=drive_link", primary: true },
+        { label: "📄 Resume (PDF)", url: "https://drive.google.com/file/d/1IZvW7-Ujbg3V-GMN-SSme2JgMyRP0hFc/view?usp=drive_link", primary: true },
         { label: "💼 View LinkedIn Profile", url: "https://www.linkedin.com/in/ashkrahman/" }
       ]
     };
@@ -243,7 +243,7 @@ function generateNaturalChatbotResponse(userText) {
       text: "📄 **Ashikur Rahman's Official Resume** is available for download!\n\nIt features complete details on his technical skills, MERN stack full-stack projects, education at Dhaka Polytechnic Institute, and verified contact channels.",
       tokens: 95,
       links: [
-        { label: "📥 Download Official Resume (PDF)", url: "https://drive.google.com/file/d/1IZvW7-Ujbg3V-GMN-SSme2JgMyRP0hFc/view?usp=drive_link", primary: true }
+        { label: "📄 Resume (PDF)", url: "https://drive.google.com/file/d/1IZvW7-Ujbg3V-GMN-SSme2JgMyRP0hFc/view?usp=drive_link", primary: true }
       ]
     };
   }

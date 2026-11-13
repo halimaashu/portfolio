@@ -28,102 +28,102 @@ const Contact = () => {
   };
 
   return (
-    <footer className="py-24 bg-brand-darker border-t border-gray-800" id="contact">
-      <div className="max-w-6xl mx-auto px-6">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
+    <footer className="py-20 md:py-24 bg-brand-darker border-t border-gray-800" id="contact">
+      <div className="max-w-7xl mx-auto px-6 sm:px-8">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16">
           {/* Contact Info */}
           <div>
-            <h2 className="text-4xl font-bold mb-6">Let's talk?</h2>
-            <p className="text-gray-400 mb-10 max-w-md">I am currently available for freelance projects or full-time roles. If you have a question or just want to say hi, I'll try my best to get back to you!</p>
-            <div className="space-y-6">
+            <h2 className="text-3xl sm:text-4xl font-extrabold text-white mb-4 font-display">Let's talk?</h2>
+            <p className="text-gray-300 mb-8 max-w-md text-base leading-relaxed">I am currently available for freelance projects or full-time roles. If you have a question or just want to say hi, I'll try my best to get back to you!</p>
+            <div className="space-y-5">
               <a href="mailto:halima520ashu@gmail.com" className="flex items-center gap-4 group cursor-pointer">
                 <div className="contact-bubble w-12 h-12 rounded-full flex items-center justify-center transition-all duration-300 shadow-md">
-                  <svg className="w-6 h-6 transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <svg className="w-5 h-5 transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"></path>
                   </svg>
                 </div>
-                <span className="text-gray-300 group-hover:text-brand-teal transition-colors duration-200">halima520ashu@gmail.com</span>
+                <span className="text-gray-300 group-hover:text-brand-teal transition-colors duration-200 text-sm sm:text-base">halima520ashu@gmail.com</span>
               </a>
               <a href="https://wa.me/8801975665249" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 group cursor-pointer">
                 <div className="contact-bubble w-12 h-12 rounded-full flex items-center justify-center transition-all duration-300 shadow-md">
-                  <svg className="w-6 h-6 transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <svg className="w-5 h-5 transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a1.994 1.994 0 01-1.414-.586m0 0L11 14h4a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2v4l.586-.586z" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"></path>
                   </svg>
                 </div>
-                <span className="text-gray-300 group-hover:text-brand-teal transition-colors duration-200">+880 1975-665249</span>
+                <span className="text-gray-300 group-hover:text-brand-teal transition-colors duration-200 text-sm sm:text-base">+880 1975-665249</span>
               </a>
               <a href="https://www.facebook.com/ashik.rahman.322962" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 group cursor-pointer">
                 <div className="contact-bubble w-12 h-12 rounded-full flex items-center justify-center transition-all duration-300 shadow-md">
-                  <svg className="w-6 h-6 transition-colors duration-300" fill="currentColor" viewBox="0 0 24 24">
+                  <svg className="w-5 h-5 transition-colors duration-300" fill="currentColor" viewBox="0 0 24 24">
                     <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
                   </svg>
                 </div>
-                <span className="text-gray-300 group-hover:text-brand-teal transition-colors duration-200">Facebook</span>
+                <span className="text-gray-300 group-hover:text-brand-teal transition-colors duration-200 text-sm sm:text-base">Facebook</span>
               </a>
               <a href="https://github.com/halimaashu" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 group cursor-pointer">
                 <div className="contact-bubble w-12 h-12 rounded-full flex items-center justify-center transition-all duration-300 shadow-md">
-                  <svg className="w-6 h-6 transition-colors duration-300" fill="currentColor" viewBox="0 0 24 24">
+                  <svg className="w-5 h-5 transition-colors duration-300" fill="currentColor" viewBox="0 0 24 24">
                     <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
                   </svg>
                 </div>
-                <span className="text-gray-300 group-hover:text-brand-teal transition-colors duration-200">GitHub</span>
+                <span className="text-gray-300 group-hover:text-brand-teal transition-colors duration-200 text-sm sm:text-base">GitHub</span>
               </a>
               <a href="https://www.linkedin.com/in/ashkrahman/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 group cursor-pointer">
                 <div className="contact-bubble w-12 h-12 rounded-full flex items-center justify-center transition-all duration-300 shadow-md">
-                  <svg className="w-6 h-6 transition-colors duration-300" fill="currentColor" viewBox="0 0 24 24">
+                  <svg className="w-5 h-5 transition-colors duration-300" fill="currentColor" viewBox="0 0 24 24">
                     <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
                   </svg>
                 </div>
-                <span className="text-gray-300 group-hover:text-brand-teal transition-colors duration-200">LinkedIn</span>
+                <span className="text-gray-300 group-hover:text-brand-teal transition-colors duration-200 text-sm sm:text-base">LinkedIn</span>
               </a>
             </div>
           </div>
           {/* Contact Form */}
-          <div className="glass-card p-8 rounded-2xl">
-            <form onSubmit={handleSubmit} className="space-y-6">
+          <div className="glass-card p-6 sm:p-8 rounded-3xl border border-[#5a2aac]/30">
+            <form onSubmit={handleSubmit} className="space-y-5">
               <div>
-                <label className="block text-sm font-medium text-gray-400 mb-2">Name</label>
+                <label className="block text-sm font-semibold text-gray-300 mb-2 font-display">Name</label>
                 <input 
                   name="name"
                   value={formData.name}
                   onChange={handleChange}
-                  className="w-full bg-brand-dark/50 border-gray-700 rounded-lg focus:ring-brand-teal focus:border-brand-teal text-white placeholder-gray-500 p-3" 
+                  className="w-full bg-brand-dark/50 border border-gray-700 rounded-xl focus:ring-2 focus:ring-[#731cb2] focus:border-[#731cb2] text-white placeholder-gray-500 p-3 text-sm sm:text-base outline-none transition-all" 
                   placeholder="Your Name" 
                   type="text" 
                   required 
                 />
               </div>
               <div>
-                <label className="block text-sm font-medium text-gray-400 mb-2">Email</label>
+                <label className="block text-sm font-semibold text-gray-300 mb-2 font-display">Email</label>
                 <input 
                   name="email"
                   value={formData.email}
                   onChange={handleChange}
-                  className="w-full bg-brand-dark/50 border-gray-700 rounded-lg focus:ring-brand-teal focus:border-brand-teal text-white placeholder-gray-500 p-3" 
+                  className="w-full bg-brand-dark/50 border border-gray-700 rounded-xl focus:ring-2 focus:ring-[#731cb2] focus:border-[#731cb2] text-white placeholder-gray-500 p-3 text-sm sm:text-base outline-none transition-all" 
                   placeholder="your.email@example.com" 
                   type="email" 
                   required 
                 />
               </div>
               <div>
-                <label className="block text-sm font-medium text-gray-400 mb-2">Message</label>
+                <label className="block text-sm font-semibold text-gray-300 mb-2 font-display">Message</label>
                 <textarea 
                   name="message"
                   value={formData.message}
                   onChange={handleChange}
-                  className="w-full bg-brand-dark/50 border-gray-700 rounded-lg focus:ring-brand-teal focus:border-brand-teal text-white placeholder-gray-500 p-3" 
+                  className="w-full bg-brand-dark/50 border border-gray-700 rounded-xl focus:ring-2 focus:ring-[#731cb2] focus:border-[#731cb2] text-white placeholder-gray-500 p-3 text-sm sm:text-base outline-none transition-all" 
                   placeholder="Hi Ashikur, let's connect!" 
                   rows="4"
                   required
                 ></textarea>
               </div>
-              <button className="w-full py-4 bg-gradient-to-r from-[#731cb2] to-[#5a2aac] text-[#F8FAFC] font-bold rounded-lg hover:opacity-90 transition shadow-[0_0_20px_rgba(115,28,178,0.4)]" type="submit">
+              <button className="w-full py-3 px-6 bg-gradient-to-r from-[#731cb2] to-[#5a2aac] text-[#F8FAFC] font-semibold text-sm sm:text-base rounded-xl hover:shadow-[0_0_25px_rgba(115,28,178,0.5)] transition-all shadow-[0_0_15px_rgba(115,28,178,0.3)] transform hover:-translate-y-0.5" type="submit">
                 Send Message
               </button>
             </form>
           </div>
         </div>
-        <div className="mt-20 pt-8 border-t border-gray-800 text-center text-gray-500 text-sm">
+        <div className="mt-16 pt-8 border-t border-gray-800 text-center text-gray-400 text-xs sm:text-sm">
           <p>© 2026 Ashikur Rahman. All Rights Reserved.</p>
         </div>
       </div>

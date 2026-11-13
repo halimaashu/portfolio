@@ -78,10 +78,10 @@ const ProjectRow = ({ project, index }) => {
           </div>
 
           {/* Links */}
-          <div className="flex flex-wrap sm:flex-nowrap gap-4">
+          <div className="flex flex-wrap sm:flex-nowrap gap-3">
             {project.github && (
               <a 
-                className="flex-1 text-center py-3 px-4 bg-brand-teal/10 text-brand-teal rounded-xl font-bold hover:bg-brand-teal hover:text-white transition-all duration-300 text-sm border border-brand-teal/30" 
+                className="flex-1 text-center py-2.5 px-4 bg-brand-teal/10 text-brand-teal rounded-xl font-semibold hover:bg-brand-teal hover:text-white transition-all duration-300 text-sm border border-brand-teal/30" 
                 href={project.github}
                 target="_blank"
                 rel="noopener noreferrer"
@@ -91,7 +91,7 @@ const ProjectRow = ({ project, index }) => {
             )}
             {project.demo && (
               <a 
-                className="flex-1 text-center py-3 px-4 bg-gradient-to-r from-[#731cb2] to-[#5a2aac] text-[#F8FAFC] rounded-xl font-bold hover:opacity-90 transition-all duration-300 text-sm shadow-[0_0_20px_rgba(115,28,178,0.4)]" 
+                className="flex-1 text-center py-2.5 px-4 bg-gradient-to-r from-[#731cb2] to-[#5a2aac] text-[#F8FAFC] rounded-xl font-semibold hover:opacity-90 transition-all duration-300 text-sm shadow-[0_0_20px_rgba(115,28,178,0.4)]" 
                 href={project.demo}
                 target="_blank"
                 rel="noopener noreferrer"
@@ -150,8 +150,8 @@ const Projects = () => {
   };
 
   return (
-    <section className="py-24 bg-brand-dark relative" id="projects">
-      <div className="max-w-7xl mx-auto px-6">
+    <section className="py-20 md:py-24 bg-brand-dark relative" id="projects">
+      <div className="max-w-7xl mx-auto px-6 sm:px-8">
         {/* Section Header */}
         <div className="text-center mb-16">
           <div className="inline-flex items-center space-x-2 bg-brand-teal/10 px-4 py-1.5 rounded-full border border-brand-teal/20 mb-3">

@@ -93,8 +93,8 @@ const About = () => {
   }, []);
 
   return (
-    <section ref={sectionRef} className="py-20 bg-brand-dark overflow-hidden" id="about">
-      <div className="max-w-6xl mx-auto px-6">
+    <section ref={sectionRef} className="py-20 md:py-24 bg-brand-dark overflow-hidden" id="about">
+      <div className="max-w-7xl mx-auto px-6 sm:px-8">
         <div className="flex flex-col-reverse md:flex-row items-center gap-12">
           <div ref={profileRef} className="relative flex-shrink-0">
             <div className="w-64 h-64 rounded-full border-4 border-[#731cb2] p-1 overflow-hidden shadow-[0_0_35px_rgba(115,28,178,0.45)]">
@@ -107,7 +107,7 @@ const About = () => {
             </div>
           </div>
           <div ref={textRef} className="flex-1 text-center md:text-left">
-            <h2 className="text-4xl md:text-5xl font-bold mb-4 font-display">About Me</h2>
+            <h2 className="text-4xl md:text-5xl font-bold mb-4 font-display text-white">About Me</h2>
             <p className="text-gray-300 text-lg leading-relaxed max-w-2xl">
               I am <span className="text-white font-semibold">Ashikur Rahman</span>, a dedicated <span className="text-[#a17de0] font-semibold">MERN Stack Developer</span> currently pursuing my Diploma in <span className="text-[#a17de0] font-semibold">Computer Science & Technology (CST)</span> at <span className="text-white font-semibold">Dhaka Polytechnic Institute</span>. 
             </p>
@@ -116,28 +116,28 @@ const About = () => {
             </p>
             <div className="mt-8">
               <a 
-                className="inline-flex items-center px-6 py-3 border-2 border-[#731cb2] text-[#a17de0] font-bold rounded-lg hover:bg-[#731cb2] hover:text-[#F8FAFC] transition-all duration-300 shadow-[0_0_20px_rgba(115,28,178,0.3)]" 
+                className="inline-flex items-center px-5 py-2.5 sm:px-6 sm:py-3 border-2 border-[#731cb2] text-[#a17de0] font-semibold text-sm sm:text-base rounded-xl hover:bg-[#731cb2] hover:text-[#F8FAFC] transition-all duration-300 shadow-[0_0_20px_rgba(115,28,178,0.3)] group" 
                 href="https://drive.google.com/file/d/1IZvW7-Ujbg3V-GMN-SSme2JgMyRP0hFc/view?usp=drive_link"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path>
+                <svg className="w-4 h-4 mr-2 transition-transform group-hover:translate-y-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path>
                 </svg>
-                Download my resume (PDF)
+                Resume
               </a>
             </div>
           </div>
         </div>
         
-        <div ref={principlesRef} className="grid grid-cols-2 md:grid-cols-4 gap-8 mt-24">
+        <div ref={principlesRef} className="grid grid-cols-2 md:grid-cols-4 gap-6 sm:gap-8 mt-20">
           {principles.map((principle, index) => (
-            <div key={index} className="principle-card flex flex-col items-center text-center">
-              <div className="w-16 h-16 bg-[#731cb2]/15 rounded-xl flex items-center justify-center mb-4 border border-[#5a2aac]/50 group hover:border-[#731cb2] hover:shadow-[0_0_20px_rgba(115,28,178,0.3)] transition-all">
+            <div key={index} className="principle-card flex flex-col items-center text-center p-4 rounded-2xl glass-card border border-[#5a2aac]/20">
+              <div className="w-14 h-14 bg-[#731cb2]/15 rounded-xl flex items-center justify-center mb-3 border border-[#5a2aac]/40 group hover:border-[#731cb2] hover:shadow-[0_0_20px_rgba(115,28,178,0.3)] transition-all">
                 {principle.icon}
               </div>
-              <h4 className="font-bold text-lg mb-2">{principle.title}</h4>
-              <p className="text-sm text-gray-400">{principle.desc}</p>
+              <h4 className="font-bold text-base sm:text-lg mb-1 text-white font-display">{principle.title}</h4>
+              <p className="text-xs sm:text-sm text-gray-400">{principle.desc}</p>
             </div>
           ))}
         </div>

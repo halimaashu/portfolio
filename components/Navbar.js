@@ -81,7 +81,6 @@ const Navbar = () => {
               alt="Ashikur Rahman Logo" 
               className="nav-logo w-10 h-10 sm:w-11 sm:h-11 object-contain rounded-full border border-brand-teal/50 shadow-[0_0_20px_rgba(115,28,178,0.4)] brightness-0 invert transition-all duration-300 group-hover:scale-105 group-hover:border-brand-teal" 
             />
-            <span className="absolute -bottom-0.5 -right-0.5 w-2.5 h-2.5 bg-emerald-500 rounded-full border-2 border-brand-darker animate-pulse" title="Available for hire"></span>
           </div>
           <div className="flex flex-col">
             <span className="font-extrabold text-sm sm:text-base tracking-tight text-white group-hover:text-brand-teal transition-colors font-display">
@@ -177,7 +176,7 @@ const Navbar = () => {
             animate={{ opacity: 1, height: 'auto', y: 0 }}
             exit={{ opacity: 0, height: 0, y: -10 }}
             transition={{ duration: 0.25, ease: 'easeOut' }}
-            className="md:hidden overflow-hidden max-w-7xl mx-auto px-6 pt-3 pb-6"
+            className="md:hidden overflow-hidden max-w-7xl mx-auto px-6 sm:px-8 pt-3 pb-6"
           >
             <div className="glass-card mobile-menu-glass backdrop-blur-2xl border border-[#5a2aac]/30 rounded-2xl p-5 shadow-2xl space-y-3">
               <ul className="space-y-1">

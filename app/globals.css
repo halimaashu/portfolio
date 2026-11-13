@@ -216,8 +216,17 @@ html.lenis {
   color: #0f172a;
 }
 
+.light h1:not(.bg-clip-text),
+.light h2:not(.bg-clip-text),
+.light h3:not(.bg-clip-text),
+.light h4:not(.bg-clip-text),
+.light h5:not(.bg-clip-text),
+.light h6:not(.bg-clip-text) {
+  color: #0f172a;
+}
+
 .light .glass-card {
-  background: rgba(255, 255, 255, 0.88);
+  background: rgba(255, 255, 255, 0.94);
   border: 1px solid rgba(90, 42, 172, 0.15);
   box-shadow: 0 10px 25px -5px rgba(90, 42, 172, 0.08), 0 8px 10px -6px rgba(0, 0, 0, 0.03);
 }
@@ -228,6 +237,10 @@ html.lenis {
 
 .light .text-white {
   color: #0f172a !important;
+}
+
+.light .text-gray-200 {
+  color: #1e293b !important;
 }
 
 .light .text-gray-300 {
@@ -287,18 +300,52 @@ html.lenis {
 }
 
 .light .nav-scrolled {
-  background-color: rgba(255, 255, 255, 0.92) !important;
+  background-color: rgba(255, 255, 255, 0.94) !important;
   border-bottom: 1px solid rgba(226, 232, 240, 0.9) !important;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05) !important;
 }
 
 .light .nav-unscrolled {
-  background-color: rgba(255, 255, 255, 0.65) !important;
-  border-bottom: 1px solid rgba(226, 232, 240, 0.5) !important;
+  background-color: rgba(255, 255, 255, 0.8) !important;
+  border-bottom: 1px solid rgba(226, 232, 240, 0.6) !important;
+}
+
+.light .nav-link-active {
+  background: linear-gradient(135deg, #731cb2, #5a2aac) !important;
+  color: #ffffff !important;
+  border-color: #731cb2 !important;
+  box-shadow: 0 3px 12px rgba(115, 28, 178, 0.3) !important;
+}
+
+.light nav ul a:not(.nav-link-active) {
+  color: #334155 !important;
+}
+
+.light nav ul a:not(.nav-link-active):hover {
+  color: #731cb2 !important;
+  background-color: rgba(115, 28, 178, 0.08) !important;
 }
 
 .light #home {
   background: linear-gradient(to bottom, #f5f3ff, #f8fafc) !important;
+}
+
+.light .hero-badge-text {
+  color: #731cb2 !important;
+  font-weight: 700 !important;
+}
+
+.light .hero-btn-secondary {
+  border-color: #cbd5e1 !important;
+  color: #1e293b !important;
+  background-color: #ffffff !important;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05) !important;
+}
+
+.light .hero-btn-secondary:hover {
+  border-color: #731cb2 !important;
+  color: #731cb2 !important;
+  background-color: rgba(115, 28, 178, 0.06) !important;
 }
 
 .light #about {
@@ -309,12 +356,105 @@ html.lenis {
   background-color: #f8fafc !important;
 }
 
+.light #qualifications .glass-card {
+  background-color: rgba(255, 255, 255, 0.95) !important;
+  border-color: rgba(90, 42, 172, 0.18) !important;
+  box-shadow: 0 10px 30px -5px rgba(90, 42, 172, 0.08) !important;
+}
+
+.light #qualifications span.bg-brand-dark\/90,
+.light #qualifications span[class*="bg-brand-dark"] {
+  background-color: #f1f5f9 !important;
+  color: #1e293b !important;
+  border-color: #cbd5e1 !important;
+  font-weight: 500 !important;
+}
+
 .light #skills {
   background-color: #f1f5f9 !important;
 }
 
+.light #skills .glass-card {
+  background-color: rgba(255, 255, 255, 0.95) !important;
+  border-color: rgba(90, 42, 172, 0.16) !important;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04) !important;
+}
+
+.light #skills .glass-card > div:first-child {
+  background-color: #f8fafc !important;
+  border-color: #e2e8f0 !important;
+}
+
+.light #skills .glass-card h4 {
+  color: #0f172a !important;
+}
+
+.light #skills .glass-card span {
+  color: #475569 !important;
+}
+
+.light #skills a[href*="github.com"] {
+  background-color: #ffffff !important;
+  color: #1e293b !important;
+  border-color: #731cb2 !important;
+  box-shadow: 0 4px 15px rgba(115, 28, 178, 0.1) !important;
+}
+
+.light #skills a[href*="github.com"] svg {
+  fill: #1e293b !important;
+}
+
+.light #skills a[href*="github.com"]:hover {
+  background: linear-gradient(135deg, #731cb2, #5a2aac) !important;
+  color: #ffffff !important;
+}
+
+.light #skills a[href*="github.com"]:hover svg {
+  fill: #ffffff !important;
+}
+
+.light #skills a[href*="github.com"]:hover span {
+  color: #ffffff !important;
+}
+
 .light #projects {
   background-color: #f8fafc !important;
+}
+
+.light #projects .glass-card {
+  background-color: rgba(255, 255, 255, 0.95) !important;
+  border-color: rgba(90, 42, 172, 0.18) !important;
+  box-shadow: 0 10px 30px -5px rgba(90, 42, 172, 0.08) !important;
+}
+
+.light #projects span.bg-gray-800\/90,
+.light #projects span[class*="bg-gray-800"] {
+  background-color: #f1f5f9 !important;
+  color: #731cb2 !important;
+  border-color: rgba(115, 28, 178, 0.25) !important;
+  font-weight: 600 !important;
+}
+
+.light #projects a.bg-brand-teal\/10 {
+  background-color: rgba(115, 28, 178, 0.1) !important;
+  color: #731cb2 !important;
+  border-color: rgba(115, 28, 178, 0.3) !important;
+}
+
+.light #projects a.bg-brand-teal\/10:hover {
+  background-color: #731cb2 !important;
+  color: #ffffff !important;
+}
+
+.light #projects button.glass-card {
+  background-color: #ffffff !important;
+  color: #1e293b !important;
+  border-color: #e2e8f0 !important;
+}
+
+.light #projects button.glass-card:hover {
+  border-color: #731cb2 !important;
+  color: #731cb2 !important;
 }
 
 .light #contact {
@@ -322,11 +462,22 @@ html.lenis {
   border-top-color: #e2e8f0 !important;
 }
 
+.light #contact label {
+  color: #1e293b !important;
+  font-weight: 600 !important;
+}
+
 .light input,
 .light textarea {
   background-color: #ffffff !important;
   color: #0f172a !important;
   border-color: #cbd5e1 !important;
+}
+
+.light input:focus,
+.light textarea:focus {
+  border-color: #731cb2 !important;
+  box-shadow: 0 0 0 3px rgba(115, 28, 178, 0.15) !important;
 }
 
 .light input::placeholder,
@@ -422,7 +573,9 @@ html.lenis {
 /* Light Theme Contrast Protections for Brand Buttons (never text spans) */
 .light button[class*="bg-gradient"],
 .light a[class*="bg-gradient"],
-.light .btn-gradient {
+.light .btn-gradient,
+.light button[class*="bg-gradient"] *,
+.light a[class*="bg-gradient"] * {
   color: #F8FAFC !important;
 }
 
