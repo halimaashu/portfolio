@@ -93,11 +93,11 @@ const About = () => {
   }, []);
 
   return (
-    <section ref={sectionRef} className="py-20 md:py-24 bg-brand-dark overflow-hidden" id="about">
+    <section ref={sectionRef} className="pt-12 md:pt-16 pb-4 md:pb-6 bg-brand-dark overflow-hidden" id="about">
       <div className="max-w-7xl mx-auto px-6 sm:px-8">
-        <div className="flex flex-col-reverse md:flex-row items-center gap-12">
+        <div className="flex flex-col-reverse md:flex-row items-center gap-8 md:gap-10">
           <div ref={profileRef} className="relative flex-shrink-0">
-            <div className="w-64 h-64 rounded-full border-4 border-[#731cb2] p-1 overflow-hidden shadow-[0_0_35px_rgba(115,28,178,0.45)]">
+            <div className="w-56 h-56 sm:w-64 sm:h-64 rounded-full border-4 border-[#731cb2] p-1 overflow-hidden shadow-[0_0_35px_rgba(115,28,178,0.45)]">
               <img 
                 alt="Ashikur Rahman Profile" 
                 className="w-full h-full object-cover rounded-full scale-110" 
@@ -107,14 +107,14 @@ const About = () => {
             </div>
           </div>
           <div ref={textRef} className="flex-1 text-center md:text-left">
-            <h2 className="text-4xl md:text-5xl font-bold mb-4 font-display text-white">About Me</h2>
-            <p className="text-gray-300 text-lg leading-relaxed max-w-2xl">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-3 font-display text-white">About Me</h2>
+            <p className="text-gray-300 text-base sm:text-lg leading-relaxed max-w-2xl">
               I am <span className="text-white font-semibold">Ashikur Rahman</span>, a dedicated <span className="text-[#a17de0] font-semibold">MERN Stack Developer</span> currently pursuing my Diploma in <span className="text-[#a17de0] font-semibold">Computer Science & Technology (CST)</span> at <span className="text-white font-semibold">Dhaka Polytechnic Institute</span>. 
             </p>
-            <p className="text-gray-300 text-lg leading-relaxed max-w-2xl mt-4">
+            <p className="text-gray-300 text-base sm:text-lg leading-relaxed max-w-2xl mt-3">
               I specialize in building full-stack web applications using <span className="text-[#a17de0] font-semibold">React, Next.js, Node.js, Express.js, and MongoDB</span>. From designing responsive front-end user interfaces to engineering robust RESTful APIs, database schemas, and authentication systems, I focus on delivering clean, accessible, and high-performance solutions.
             </p>
-            <div className="mt-8">
+            <div className="mt-6">
               <a 
                 className="inline-flex items-center px-5 py-2.5 sm:px-6 sm:py-3 border-2 border-[#731cb2] text-[#a17de0] font-semibold text-sm sm:text-base rounded-xl hover:bg-[#731cb2] hover:text-[#F8FAFC] transition-all duration-300 shadow-[0_0_20px_rgba(115,28,178,0.3)] group" 
                 href="https://drive.google.com/file/d/1IZvW7-Ujbg3V-GMN-SSme2JgMyRP0hFc/view?usp=drive_link"
@@ -130,7 +130,7 @@ const About = () => {
           </div>
         </div>
         
-        <div ref={principlesRef} className="grid grid-cols-2 md:grid-cols-4 gap-6 sm:gap-8 mt-20">
+        <div ref={principlesRef} className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 mt-12 md:mt-14">
           {principles.map((principle, index) => (
             <div key={index} className="principle-card flex flex-col items-center text-center p-4 rounded-2xl glass-card border border-[#5a2aac]/20">
               <div className="w-14 h-14 bg-[#731cb2]/15 rounded-xl flex items-center justify-center mb-3 border border-[#5a2aac]/40 group hover:border-[#731cb2] hover:shadow-[0_0_20px_rgba(115,28,178,0.3)] transition-all">
